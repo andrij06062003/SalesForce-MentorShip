@@ -1,10 +1,3 @@
-/**
- * @description       : 
- * @author            : Svyatoslav Andrushchak
- * @group             : 
- * @last modified on  : 10-14-2024
- * @last modified by  : Svyatoslav Andrushchak
-**/
 public without sharing class ClosesWonHandler {
     public static void updateClosesWonHandler() {
         
