@@ -258,3 +258,23 @@ declare module "@salesforce/schema/Order.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
 }
+declare module "@salesforce/schema/Order.Payments_Count__c" {
+  const Payments_Count__c:number;
+  export default Payments_Count__c;
+}
+declare module "@salesforce/schema/Order.Amount_Paid__c" {
+  const Amount_Paid__c:number;
+  export default Amount_Paid__c;
+}
+declare module "@salesforce/schema/Order.Amount_Left__c" {
+  const Amount_Left__c:number;
+  export default Amount_Left__c;
+}
+declare module "@salesforce/schema/Order.Opportunity_Relation__r" {
+  const Opportunity_Relation__r:any;
+  export default Opportunity_Relation__r;
+}
+declare module "@salesforce/schema/Order.Opportunity_Relation__c" {
+  const Opportunity_Relation__c:any;
+  export default Opportunity_Relation__c;
+}

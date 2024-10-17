@@ -62,6 +62,8 @@ global class Task {
     global List<Task> RecurringTasks;
     global List<TaskFeed> Feeds;
     global List<TopicAssignment> TopicAssignments;
+    global List<UserDefinedLabelAssignment> UserDefinedLabelAssignments;
+    global List<VoiceCall> VoiceCallActivities;
     global List<AIInsightValue> SobjectLookupValue;
     global List<AIRecordInsight> Target;
     global List<ContentDocumentLinkChangeEvent> LinkedEntity;
@@ -72,6 +74,7 @@ global class Task {
     global List<FlowExecutionErrorEvent> ContextRecord;
     global List<FlowRecordRelation> RelatedRecord;
     global List<TaskChangeEvent> RecurrenceActivity;
+    global List<VoiceCallChangeEvent> Activity;
 
     global Task () 
     {

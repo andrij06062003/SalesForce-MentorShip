@@ -140,27 +140,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Value Proposition",
-          "validFor": null,
-          "value": "Value Proposition"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Id. Decision Makers",
-          "validFor": null,
-          "value": "Id. Decision Makers"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Perception Analysis",
-          "validFor": null,
-          "value": "Perception Analysis"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Proposal/Price Quote",
           "validFor": null,
           "value": "Proposal/Price Quote"
@@ -185,6 +164,13 @@
           "label": "Closed Lost",
           "validFor": null,
           "value": "Closed Lost"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Contract Sent",
+          "validFor": null,
+          "value": "Contract Sent"
         }
       ],
       "referenceTo": [],
@@ -929,6 +915,149 @@
       "relationshipName": "LastCloseDateChangedHistory",
       "sortable": true,
       "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Delivery/Installation Status",
+      "name": "DeliveryInstallationStatus__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "In progress",
+          "validFor": null,
+          "value": "In progress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yet to begin",
+          "validFor": null,
+          "value": "Yet to begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Completed",
+          "validFor": null,
+          "value": "Completed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Tracking Number",
+      "name": "TrackingNumber__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Order Number",
+      "name": "OrderNumber__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Current Generator(s)",
+      "name": "CurrentGenerators__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Main Competitor(s)",
+      "name": "MainCompetitors__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Car",
+      "name": "Car__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Product2"
+      ],
+      "relationshipName": "Car__r",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "WarningPoint",
+      "name": "WarningPoint__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
     }
   ],
   "label": "Opportunity",
@@ -944,7 +1073,7 @@
       "restrictedDelete": false
     },
     {
-      "cascadeDelete": true,
+      "cascadeDelete": false,
       "childSObject": "AIRecordInsight",
       "deprecatedAndHidden": false,
       "field": "TargetId",
@@ -1170,7 +1299,7 @@
       "field": "RelatedRecordId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": null,
+      "relationshipName": "FlowOrchestrationWorkItems",
       "restrictedDelete": false
     },
     {
@@ -1198,6 +1327,26 @@
       "childSObject": "LeadChangeEvent",
       "deprecatedAndHidden": false,
       "field": "ConvertedOpportunityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ListEmail",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ListEmails",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ListEmailChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -1314,6 +1463,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "OpportunityLineItemChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "OpportunityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "OpportunityPartner",
       "deprecatedAndHidden": false,
@@ -1325,12 +1484,32 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "OpportunityRelatedDeleteLog",
+      "deprecatedAndHidden": false,
+      "field": "OpportunityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "OpportunityRelatedDeleteLogs",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "OpportunityShare",
       "deprecatedAndHidden": false,
       "field": "OpportunityId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Order",
+      "deprecatedAndHidden": false,
+      "field": "Opportunity_Relation__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Orders__r",
       "restrictedDelete": false
     },
     {
@@ -1365,12 +1544,32 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ProcessInstanceChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ProcessInstanceHistory",
       "deprecatedAndHidden": false,
       "field": "TargetObjectId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "ProcessSteps",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Product2",
+      "deprecatedAndHidden": false,
+      "field": "Opportunity__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Cars__r",
       "restrictedDelete": false
     },
     {
@@ -1415,26 +1614,6 @@
     },
     {
       "cascadeDelete": true,
-      "childSObject": "Swarm",
-      "deprecatedAndHidden": false,
-      "field": "RelatedRecordId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "Swarms",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
-      "childSObject": "SwarmMember",
-      "deprecatedAndHidden": false,
-      "field": "RelatedRecordId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "SwarmMembers",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
       "childSObject": "Task",
       "deprecatedAndHidden": false,
       "field": "WhatId",
@@ -1461,6 +1640,46 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "UserDefinedLabelAssignment",
+      "deprecatedAndHidden": false,
+      "field": "ItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "UserDefinedLabelAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "UserPrioritizedRecord",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RelatedRecords",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     }
   ],

@@ -51,75 +51,70 @@
       "picklistValues": [],
       "referenceTo": [
         "Account",
-        "ApptBundleAggrDurDnscale",
-        "ApptBundleAggrPolicy",
-        "ApptBundleConfig",
-        "ApptBundlePolicy",
-        "ApptBundlePolicySvcTerr",
-        "ApptBundlePropagatePolicy",
-        "ApptBundleRestrictPolicy",
-        "ApptBundleSortPolicy",
+        "AppointmentCategory",
+        "AppointmentInvitation",
         "Asset",
         "AssetRelationship",
-        "AssetWarranty",
         "AssignedResource",
-        "AttributeDefinition",
-        "AttributePicklist",
-        "AttributePicklistValue",
+        "CalculationMatrix",
+        "CalculationMatrixVersion",
+        "CalculationProcedure",
+        "CalculationProcedureVersion",
         "Campaign",
         "Case",
+        "ChangeRequest",
         "CommSubscriptionConsent",
         "ContactRequest",
         "Contract",
         "ContractLineItem",
+        "Coupon",
         "CreditMemo",
+        "DeliveryEstimationSetup",
         "Entitlement",
-        "Expense",
-        "ExpenseReport",
-        "ExpenseReportEntry",
+        "ExpressionSet",
+        "ExpressionSetVersion",
+        "FulfillmentOrder",
         "Image",
+        "Incident",
         "Invoice",
         "LegalEntity",
         "ListEmail",
         "Location",
-        "MaintenanceAsset",
-        "MaintenancePlan",
+        "LocationShippingCarrierMethod",
         "OperatingHoursHoliday",
         "Opportunity",
         "Order",
         "PartyConsent",
+        "PrivacyRTBFRequest",
+        "Problem",
         "ProcessException",
         "Product2",
-        "ProductConsumed",
-        "ProductItem",
-        "ProductRequest",
-        "ProductRequestLineItem",
-        "ProductServiceCampaign",
-        "ProductServiceCampaignItem",
-        "ProductTransfer",
-        "Property__c",
+        "ProductCatalog",
+        "Promotion",
+        "PromotionMarketSegment",
+        "PromotionQualifier",
+        "PromotionSegment",
+        "PromotionSegmentBuyerGroup",
+        "PromotionSegmentSalesStore",
+        "PromotionTarget",
+        "PromotionTier",
         "ResourceAbsence",
         "ReturnOrder",
         "ReturnOrderLineItem",
         "ServiceAppointment",
         "ServiceContract",
-        "ServiceCrew",
-        "ServiceCrewMember",
         "ServiceResource",
         "Shift",
-        "ShiftPattern",
-        "ShiftPatternEntry",
         "Shipment",
         "ShipmentItem",
+        "ShippingCarrier",
+        "ShippingCarrierMethod",
         "Solution",
-        "TimeSheet",
-        "TimeSheetEntry",
-        "TravelMode",
-        "WarrantyTerm",
+        "Waitlist",
+        "WaitlistParticipant",
         "WorkOrder",
         "WorkOrderLineItem",
         "WorkPlan",
-        "WorkPlanSelectionRule",
         "WorkPlanTemplate",
         "WorkPlanTemplateEntry",
         "WorkStep",
@@ -818,6 +813,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT+12:00) Norfolk Island Daylight Time (Pacific/Norfolk)",
+          "validFor": null,
+          "value": "Pacific/Norfolk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT+12:00) Gilbert Islands Time (Pacific/Tarawa)",
           "validFor": null,
           "value": "Pacific/Tarawa"
@@ -839,9 +841,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+11:00) Casey Time (Antarctica/Casey)",
+          "label": "(GMT+11:00) Australian Eastern Daylight Time (Antarctica/Macquarie)",
           "validFor": null,
-          "value": "Antarctica/Casey"
+          "value": "Antarctica/Macquarie"
         },
         {
           "active": true,
@@ -863,6 +865,41 @@
           "label": "(GMT+11:00) Magadan Standard Time (Asia/Srednekolymsk)",
           "validFor": null,
           "value": "Asia/Srednekolymsk"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) Australian Eastern Daylight Time (Australia/Currie)",
+          "validFor": null,
+          "value": "Australia/Currie"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) Australian Eastern Daylight Time (Australia/Hobart)",
+          "validFor": null,
+          "value": "Australia/Hobart"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) Lord Howe Daylight Time (Australia/Lord_Howe)",
+          "validFor": null,
+          "value": "Australia/Lord_Howe"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) Australian Eastern Daylight Time (Australia/Melbourne)",
+          "validFor": null,
+          "value": "Australia/Melbourne"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+11:00) Australian Eastern Daylight Time (Australia/Sydney)",
+          "validFor": null,
+          "value": "Australia/Sydney"
         },
         {
           "active": true,
@@ -895,13 +932,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+11:00) Norfolk Island Standard Time (Pacific/Norfolk)",
-          "validFor": null,
-          "value": "Pacific/Norfolk"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "(GMT+11:00) New Caledonia Standard Time (Pacific/Noumea)",
           "validFor": null,
           "value": "Pacific/Noumea"
@@ -916,9 +946,16 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+10:30) Lord Howe Standard Time (Australia/Lord_Howe)",
+          "label": "(GMT+10:30) Australian Central Daylight Time (Australia/Adelaide)",
           "validFor": null,
-          "value": "Australia/Lord_Howe"
+          "value": "Australia/Adelaide"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+10:30) Australian Central Daylight Time (Australia/Broken_Hill)",
+          "validFor": null,
+          "value": "Australia/Broken_Hill"
         },
         {
           "active": true,
@@ -926,13 +963,6 @@
           "label": "(GMT+10:00) Dumont-d’Urville Time (Antarctica/DumontDUrville)",
           "validFor": null,
           "value": "Antarctica/DumontDUrville"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+10:00) Australian Eastern Standard Time (Antarctica/Macquarie)",
-          "validFor": null,
-          "value": "Antarctica/Macquarie"
         },
         {
           "active": true,
@@ -958,37 +988,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Currie)",
-          "validFor": null,
-          "value": "Australia/Currie"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Hobart)",
-          "validFor": null,
-          "value": "Australia/Hobart"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Lindeman)",
           "validFor": null,
           "value": "Australia/Lindeman"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Melbourne)",
-          "validFor": null,
-          "value": "Australia/Melbourne"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Sydney)",
-          "validFor": null,
-          "value": "Australia/Sydney"
         },
         {
           "active": true,
@@ -1017,20 +1019,6 @@
           "label": "(GMT+10:00) Chuuk Time (Pacific/Truk)",
           "validFor": null,
           "value": "Pacific/Truk"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+09:30) Australian Central Standard Time (Australia/Adelaide)",
-          "validFor": null,
-          "value": "Australia/Adelaide"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+09:30) Australian Central Standard Time (Australia/Broken_Hill)",
-          "validFor": null,
-          "value": "Australia/Broken_Hill"
         },
         {
           "active": true,
@@ -1101,6 +1089,13 @@
           "label": "(GMT+08:45) Australian Central Western Standard Time (Australia/Eucla)",
           "validFor": null,
           "value": "Australia/Eucla"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+08:00) Casey Time (Antarctica/Casey)",
+          "validFor": null,
+          "value": "Antarctica/Casey"
         },
         {
           "active": true,
@@ -1315,20 +1310,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+06:00) Vostok Time (Antarctica/Vostok)",
-          "validFor": null,
-          "value": "Antarctica/Vostok"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+06:00) East Kazakhstan Time (Asia/Almaty)",
-          "validFor": null,
-          "value": "Asia/Almaty"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "(GMT+06:00) Kyrgyzstan Time (Asia/Bishkek)",
           "validFor": null,
           "value": "Asia/Bishkek"
@@ -1346,13 +1327,6 @@
           "label": "(GMT+06:00) Omsk Standard Time (Asia/Omsk)",
           "validFor": null,
           "value": "Asia/Omsk"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT+06:00) East Kazakhstan Time (Asia/Qostanay)",
-          "validFor": null,
-          "value": "Asia/Qostanay"
         },
         {
           "active": true,
@@ -1406,6 +1380,20 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "(GMT+05:00) Vostok Time (Antarctica/Vostok)",
+          "validFor": null,
+          "value": "Antarctica/Vostok"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:00) East Kazakhstan Time (Asia/Almaty)",
+          "validFor": null,
+          "value": "Asia/Almaty"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "(GMT+05:00) West Kazakhstan Time (Asia/Aqtau)",
           "validFor": null,
           "value": "Asia/Aqtau"
@@ -1451,6 +1439,13 @@
           "label": "(GMT+05:00) West Kazakhstan Time (Asia/Oral)",
           "validFor": null,
           "value": "Asia/Oral"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+05:00) East Kazakhstan Time (Asia/Qostanay)",
+          "validFor": null,
+          "value": "Asia/Qostanay"
         },
         {
           "active": true,
@@ -1927,6 +1922,13 @@
           "label": "(GMT+02:00) Central Africa Time (Africa/Juba)",
           "validFor": null,
           "value": "Africa/Juba"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Khartoum)",
+          "validFor": null,
+          "value": "Africa/Khartoum"
         },
         {
           "active": true,
@@ -2491,13 +2493,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT+00:00) East Greenland Summer Time (America/Scoresbysund)",
-          "validFor": null,
-          "value": "America/Scoresbysund"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "(GMT+00:00) Azores Summer Time (Atlantic/Azores)",
           "validFor": null,
           "value": "Atlantic/Azores"
@@ -2526,16 +2521,23 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-01:00) Cape Verde Standard Time (Atlantic/Cape_Verde)",
+          "label": "(GMT-01:00) West Greenland Summer Time (America/Godthab)",
           "validFor": null,
-          "value": "Atlantic/Cape_Verde"
+          "value": "America/Godthab"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "(GMT-02:00) West Greenland Summer Time (America/Godthab)",
+          "label": "(GMT-01:00) East Greenland Summer Time (America/Scoresbysund)",
           "validFor": null,
-          "value": "America/Godthab"
+          "value": "America/Scoresbysund"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-01:00) Cape Verde Standard Time (Atlantic/Cape_Verde)",
+          "validFor": null,
+          "value": "Atlantic/Cape_Verde"
         },
         {
           "active": true,
@@ -2627,6 +2629,13 @@
           "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/Ushuaia)",
           "validFor": null,
           "value": "America/Argentina/Ushuaia"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "(GMT-03:00) Paraguay Summer Time (America/Asuncion)",
+          "validFor": null,
+          "value": "America/Asuncion"
         },
         {
           "active": true,
@@ -2823,13 +2832,6 @@
           "label": "(GMT-04:00) Atlantic Standard Time (America/Aruba)",
           "validFor": null,
           "value": "America/Aruba"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "(GMT-04:00) Paraguay Standard Time (America/Asuncion)",
-          "validFor": null,
-          "value": "America/Asuncion"
         },
         {
           "active": true,
@@ -4080,7 +4082,7 @@
       "restrictedDelete": false
     },
     {
-      "cascadeDelete": true,
+      "cascadeDelete": false,
       "childSObject": "AIRecordInsight",
       "deprecatedAndHidden": false,
       "field": "TargetId",
@@ -4287,6 +4289,36 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "UserDefinedLabelAssignment",
+      "deprecatedAndHidden": false,
+      "field": "ItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "UserDefinedLabelAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "ActivityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "VoiceCallActivities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ActivityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     }
   ],

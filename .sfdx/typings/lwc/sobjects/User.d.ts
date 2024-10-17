@@ -486,17 +486,13 @@ declare module "@salesforce/schema/User.UserPreferencesShowCountryToGuestUsers" 
   const UserPreferencesShowCountryToGuestUsers:boolean;
   export default UserPreferencesShowCountryToGuestUsers;
 }
-declare module "@salesforce/schema/User.UserPreferencesDisableFeedbackEmail" {
-  const UserPreferencesDisableFeedbackEmail:boolean;
-  export default UserPreferencesDisableFeedbackEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesDisableWorkEmail" {
-  const UserPreferencesDisableWorkEmail:boolean;
-  export default UserPreferencesDisableWorkEmail;
-}
 declare module "@salesforce/schema/User.UserPreferencesShowForecastingChangeSignals" {
   const UserPreferencesShowForecastingChangeSignals:boolean;
   export default UserPreferencesShowForecastingChangeSignals;
+}
+declare module "@salesforce/schema/User.UserPreferencesLiveAgentMiawSetupDeflection" {
+  const UserPreferencesLiveAgentMiawSetupDeflection:boolean;
+  export default UserPreferencesLiveAgentMiawSetupDeflection;
 }
 declare module "@salesforce/schema/User.UserPreferencesHideS1BrowserUI" {
   const UserPreferencesHideS1BrowserUI:boolean;
@@ -646,9 +642,9 @@ declare module "@salesforce/schema/User.UserPreferencesNativeEmailClient" {
   const UserPreferencesNativeEmailClient:boolean;
   export default UserPreferencesNativeEmailClient;
 }
-declare module "@salesforce/schema/User.UserPreferencesSendListEmailThroughExternalService" {
-  const UserPreferencesSendListEmailThroughExternalService:boolean;
-  export default UserPreferencesSendListEmailThroughExternalService;
+declare module "@salesforce/schema/User.UserPreferencesShowForecastingRoundedAmounts" {
+  const UserPreferencesShowForecastingRoundedAmounts:boolean;
+  export default UserPreferencesShowForecastingRoundedAmounts;
 }
 declare module "@salesforce/schema/User.Contact" {
   const Contact:any;

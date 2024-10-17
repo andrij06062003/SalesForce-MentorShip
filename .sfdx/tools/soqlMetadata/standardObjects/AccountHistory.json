@@ -139,6 +139,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Account Record Type",
+          "validFor": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Account Site",
           "validFor": null,
           "value": "Site"
@@ -153,9 +160,37 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Active",
+          "validFor": null,
+          "value": "Active__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active Buyer",
+          "validFor": null,
+          "value": "Active_Buyer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Annual Revenue",
           "validFor": null,
           "value": "AnnualRevenue"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assistant",
+          "validFor": null,
+          "value": "PersonAssistantName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Asst. Phone",
+          "validFor": null,
+          "value": "PersonAssistantPhone"
         },
         {
           "active": true,
@@ -223,9 +258,23 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Birthdate",
+          "validFor": null,
+          "value": "PersonBirthdate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Clean Status",
           "validFor": null,
           "value": "CleanStatus"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created by lead convert",
+          "validFor": null,
+          "value": "accountCreatedFromLead"
         },
         {
           "active": true,
@@ -237,9 +286,23 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Created by lead convert",
+          "label": "Custom Person Merged",
           "validFor": null,
-          "value": "accountCreatedFromLead"
+          "value": "customPersonMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Customer Priority",
+          "validFor": null,
+          "value": "CustomerPriority__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "D-U-N-S Number",
+          "validFor": null,
+          "value": "DunsNumber"
         },
         {
           "active": true,
@@ -258,6 +321,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Department",
+          "validFor": null,
+          "value": "PersonDepartment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Description",
           "validFor": null,
           "value": "Description"
@@ -265,9 +335,51 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "D-U-N-S Number",
+          "label": "Discount",
           "validFor": null,
-          "value": "DunsNumber"
+          "value": "Discount__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Discount Percent",
+          "validFor": null,
+          "value": "Discount_Percent__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Do Not Call",
+          "validFor": null,
+          "value": "PersonDoNotCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email",
+          "validFor": null,
+          "value": "PersonEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Bounced Date",
+          "validFor": null,
+          "value": "PersonEmailBouncedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Bounced Reason",
+          "validFor": null,
+          "value": "PersonEmailBouncedReason"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Opt Out",
+          "validFor": null,
+          "value": "PersonHasOptedOutOfEmail"
         },
         {
           "active": true,
@@ -286,9 +398,44 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Fax Opt Out",
+          "validFor": null,
+          "value": "PersonHasOptedOutOfFax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Feed event",
           "validFor": null,
           "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "First Name",
+          "validFor": null,
+          "value": "FirstName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gender Identity",
+          "validFor": null,
+          "value": "PersonGenderIdentity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Home Phone",
+          "validFor": null,
+          "value": "PersonHomePhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual",
+          "validFor": null,
+          "value": "PersonIndividual"
         },
         {
           "active": true,
@@ -307,6 +454,20 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Languages",
+          "validFor": null,
+          "value": "Languages__pc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Last Name",
+          "validFor": null,
+          "value": "LastName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Lead converted to Account",
           "validFor": null,
           "value": "accountUpdatedByLead"
@@ -317,6 +478,90 @@
           "label": "Lead converted to Person Account",
           "validFor": null,
           "value": "personAccountUpdatedByLead"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Lead Source",
+          "validFor": null,
+          "value": "PersonLeadSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Level",
+          "validFor": null,
+          "value": "Level__pc"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Address",
+          "validFor": null,
+          "value": "PersonMailingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing City",
+          "validFor": null,
+          "value": "PersonMailingCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Country",
+          "validFor": null,
+          "value": "PersonMailingCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Geocode Accuracy",
+          "validFor": null,
+          "value": "PersonMailingGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Latitude",
+          "validFor": null,
+          "value": "PersonMailingLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Longitude",
+          "validFor": null,
+          "value": "PersonMailingLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing State/Province",
+          "validFor": null,
+          "value": "PersonMailingState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Street",
+          "validFor": null,
+          "value": "PersonMailingStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mailing Zip/Postal Code",
+          "validFor": null,
+          "value": "PersonMailingPostalCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mobile",
+          "validFor": null,
+          "value": "PersonMobilePhone"
         },
         {
           "active": true,
@@ -335,9 +580,86 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Number of Locations",
+          "validFor": null,
+          "value": "NumberofLocations__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Operating Hours",
           "validFor": null,
           "value": "OperatingHours"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Address",
+          "validFor": null,
+          "value": "PersonOtherAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other City",
+          "validFor": null,
+          "value": "PersonOtherCity"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Country",
+          "validFor": null,
+          "value": "PersonOtherCountry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Geocode Accuracy",
+          "validFor": null,
+          "value": "PersonOtherGeocodeAccuracy"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Latitude",
+          "validFor": null,
+          "value": "PersonOtherLatitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Longitude",
+          "validFor": null,
+          "value": "PersonOtherLongitude"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Phone",
+          "validFor": null,
+          "value": "PersonOtherPhone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other State/Province",
+          "validFor": null,
+          "value": "PersonOtherState"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Street",
+          "validFor": null,
+          "value": "PersonOtherStreet"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other Zip/Postal Code",
+          "validFor": null,
+          "value": "PersonOtherPostalCode"
         },
         {
           "active": true,
@@ -377,6 +699,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Pronouns",
+          "validFor": null,
+          "value": "PersonPronouns"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Rating",
           "validFor": null,
           "value": "Rating"
@@ -394,6 +723,13 @@
           "label": "Record unlocked.",
           "validFor": null,
           "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Salutation",
+          "validFor": null,
+          "value": "Salutation"
         },
         {
           "active": true,
@@ -475,9 +811,44 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "SLA",
+          "validFor": null,
+          "value": "SLA__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLA Expiration Date",
+          "validFor": null,
+          "value": "SLAExpirationDate__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLA Serial Number",
+          "validFor": null,
+          "value": "SLASerialNumber__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Ticker Symbol",
           "validFor": null,
           "value": "TickerSymbol"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Title",
+          "validFor": null,
+          "value": "PersonTitle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Total Cars Bought",
+          "validFor": null,
+          "value": "Total_Cars_Bought__c"
         },
         {
           "active": true,
@@ -492,6 +863,13 @@
           "label": "Type",
           "validFor": null,
           "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Upsell Opportunity",
+          "validFor": null,
+          "value": "UpsellOpportunity__c"
         },
         {
           "active": true,

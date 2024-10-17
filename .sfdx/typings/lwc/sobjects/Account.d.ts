@@ -18,9 +18,29 @@ declare module "@salesforce/schema/Account.Name" {
   const Name:string;
   export default Name;
 }
+declare module "@salesforce/schema/Account.LastName" {
+  const LastName:string;
+  export default LastName;
+}
+declare module "@salesforce/schema/Account.FirstName" {
+  const FirstName:string;
+  export default FirstName;
+}
+declare module "@salesforce/schema/Account.Salutation" {
+  const Salutation:string;
+  export default Salutation;
+}
 declare module "@salesforce/schema/Account.Type" {
   const Type:string;
   export default Type;
+}
+declare module "@salesforce/schema/Account.RecordType" {
+  const RecordType:any;
+  export default RecordType;
+}
+declare module "@salesforce/schema/Account.RecordTypeId" {
+  const RecordTypeId:any;
+  export default RecordTypeId;
 }
 declare module "@salesforce/schema/Account.Parent" {
   const Parent:any;
@@ -206,6 +226,154 @@ declare module "@salesforce/schema/Account.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
 }
+declare module "@salesforce/schema/Account.PersonContact" {
+  const PersonContact:any;
+  export default PersonContact;
+}
+declare module "@salesforce/schema/Account.PersonContactId" {
+  const PersonContactId:any;
+  export default PersonContactId;
+}
+declare module "@salesforce/schema/Account.IsPersonAccount" {
+  const IsPersonAccount:boolean;
+  export default IsPersonAccount;
+}
+declare module "@salesforce/schema/Account.PersonMailingStreet" {
+  const PersonMailingStreet:string;
+  export default PersonMailingStreet;
+}
+declare module "@salesforce/schema/Account.PersonMailingCity" {
+  const PersonMailingCity:string;
+  export default PersonMailingCity;
+}
+declare module "@salesforce/schema/Account.PersonMailingState" {
+  const PersonMailingState:string;
+  export default PersonMailingState;
+}
+declare module "@salesforce/schema/Account.PersonMailingPostalCode" {
+  const PersonMailingPostalCode:string;
+  export default PersonMailingPostalCode;
+}
+declare module "@salesforce/schema/Account.PersonMailingCountry" {
+  const PersonMailingCountry:string;
+  export default PersonMailingCountry;
+}
+declare module "@salesforce/schema/Account.PersonMailingLatitude" {
+  const PersonMailingLatitude:number;
+  export default PersonMailingLatitude;
+}
+declare module "@salesforce/schema/Account.PersonMailingLongitude" {
+  const PersonMailingLongitude:number;
+  export default PersonMailingLongitude;
+}
+declare module "@salesforce/schema/Account.PersonMailingGeocodeAccuracy" {
+  const PersonMailingGeocodeAccuracy:string;
+  export default PersonMailingGeocodeAccuracy;
+}
+declare module "@salesforce/schema/Account.PersonMailingAddress" {
+  const PersonMailingAddress:any;
+  export default PersonMailingAddress;
+}
+declare module "@salesforce/schema/Account.PersonOtherStreet" {
+  const PersonOtherStreet:string;
+  export default PersonOtherStreet;
+}
+declare module "@salesforce/schema/Account.PersonOtherCity" {
+  const PersonOtherCity:string;
+  export default PersonOtherCity;
+}
+declare module "@salesforce/schema/Account.PersonOtherState" {
+  const PersonOtherState:string;
+  export default PersonOtherState;
+}
+declare module "@salesforce/schema/Account.PersonOtherPostalCode" {
+  const PersonOtherPostalCode:string;
+  export default PersonOtherPostalCode;
+}
+declare module "@salesforce/schema/Account.PersonOtherCountry" {
+  const PersonOtherCountry:string;
+  export default PersonOtherCountry;
+}
+declare module "@salesforce/schema/Account.PersonOtherLatitude" {
+  const PersonOtherLatitude:number;
+  export default PersonOtherLatitude;
+}
+declare module "@salesforce/schema/Account.PersonOtherLongitude" {
+  const PersonOtherLongitude:number;
+  export default PersonOtherLongitude;
+}
+declare module "@salesforce/schema/Account.PersonOtherGeocodeAccuracy" {
+  const PersonOtherGeocodeAccuracy:string;
+  export default PersonOtherGeocodeAccuracy;
+}
+declare module "@salesforce/schema/Account.PersonOtherAddress" {
+  const PersonOtherAddress:any;
+  export default PersonOtherAddress;
+}
+declare module "@salesforce/schema/Account.PersonMobilePhone" {
+  const PersonMobilePhone:string;
+  export default PersonMobilePhone;
+}
+declare module "@salesforce/schema/Account.PersonHomePhone" {
+  const PersonHomePhone:string;
+  export default PersonHomePhone;
+}
+declare module "@salesforce/schema/Account.PersonOtherPhone" {
+  const PersonOtherPhone:string;
+  export default PersonOtherPhone;
+}
+declare module "@salesforce/schema/Account.PersonAssistantPhone" {
+  const PersonAssistantPhone:string;
+  export default PersonAssistantPhone;
+}
+declare module "@salesforce/schema/Account.PersonEmail" {
+  const PersonEmail:string;
+  export default PersonEmail;
+}
+declare module "@salesforce/schema/Account.PersonTitle" {
+  const PersonTitle:string;
+  export default PersonTitle;
+}
+declare module "@salesforce/schema/Account.PersonDepartment" {
+  const PersonDepartment:string;
+  export default PersonDepartment;
+}
+declare module "@salesforce/schema/Account.PersonAssistantName" {
+  const PersonAssistantName:string;
+  export default PersonAssistantName;
+}
+declare module "@salesforce/schema/Account.PersonLeadSource" {
+  const PersonLeadSource:string;
+  export default PersonLeadSource;
+}
+declare module "@salesforce/schema/Account.PersonBirthdate" {
+  const PersonBirthdate:any;
+  export default PersonBirthdate;
+}
+declare module "@salesforce/schema/Account.PersonLastCURequestDate" {
+  const PersonLastCURequestDate:any;
+  export default PersonLastCURequestDate;
+}
+declare module "@salesforce/schema/Account.PersonLastCUUpdateDate" {
+  const PersonLastCUUpdateDate:any;
+  export default PersonLastCUUpdateDate;
+}
+declare module "@salesforce/schema/Account.PersonEmailBouncedReason" {
+  const PersonEmailBouncedReason:string;
+  export default PersonEmailBouncedReason;
+}
+declare module "@salesforce/schema/Account.PersonEmailBouncedDate" {
+  const PersonEmailBouncedDate:any;
+  export default PersonEmailBouncedDate;
+}
+declare module "@salesforce/schema/Account.PersonIndividual" {
+  const PersonIndividual:any;
+  export default PersonIndividual;
+}
+declare module "@salesforce/schema/Account.PersonIndividualId" {
+  const PersonIndividualId:any;
+  export default PersonIndividualId;
+}
 declare module "@salesforce/schema/Account.Jigsaw" {
   const Jigsaw:string;
   export default Jigsaw;
@@ -261,4 +429,56 @@ declare module "@salesforce/schema/Account.OperatingHours" {
 declare module "@salesforce/schema/Account.OperatingHoursId" {
   const OperatingHoursId:any;
   export default OperatingHoursId;
+}
+declare module "@salesforce/schema/Account.CustomerPriority__c" {
+  const CustomerPriority__c:string;
+  export default CustomerPriority__c;
+}
+declare module "@salesforce/schema/Account.SLA__c" {
+  const SLA__c:string;
+  export default SLA__c;
+}
+declare module "@salesforce/schema/Account.Active__c" {
+  const Active__c:string;
+  export default Active__c;
+}
+declare module "@salesforce/schema/Account.NumberofLocations__c" {
+  const NumberofLocations__c:number;
+  export default NumberofLocations__c;
+}
+declare module "@salesforce/schema/Account.UpsellOpportunity__c" {
+  const UpsellOpportunity__c:string;
+  export default UpsellOpportunity__c;
+}
+declare module "@salesforce/schema/Account.SLASerialNumber__c" {
+  const SLASerialNumber__c:string;
+  export default SLASerialNumber__c;
+}
+declare module "@salesforce/schema/Account.SLAExpirationDate__c" {
+  const SLAExpirationDate__c:any;
+  export default SLAExpirationDate__c;
+}
+declare module "@salesforce/schema/Account.Total_Cars_Bought__c" {
+  const Total_Cars_Bought__c:number;
+  export default Total_Cars_Bought__c;
+}
+declare module "@salesforce/schema/Account.Discount__c" {
+  const Discount__c:number;
+  export default Discount__c;
+}
+declare module "@salesforce/schema/Account.Discount_Percent__c" {
+  const Discount_Percent__c:number;
+  export default Discount_Percent__c;
+}
+declare module "@salesforce/schema/Account.Active_Buyer__c" {
+  const Active_Buyer__c:boolean;
+  export default Active_Buyer__c;
+}
+declare module "@salesforce/schema/Account.Level__pc" {
+  const Level__pc:string;
+  export default Level__pc;
+}
+declare module "@salesforce/schema/Account.Languages__pc" {
+  const Languages__pc:string;
+  export default Languages__pc;
 }

@@ -198,3 +198,35 @@ declare module "@salesforce/schema/Opportunity.LastCloseDateChangedHistoryId" {
   const LastCloseDateChangedHistoryId:any;
   export default LastCloseDateChangedHistoryId;
 }
+declare module "@salesforce/schema/Opportunity.DeliveryInstallationStatus__c" {
+  const DeliveryInstallationStatus__c:string;
+  export default DeliveryInstallationStatus__c;
+}
+declare module "@salesforce/schema/Opportunity.TrackingNumber__c" {
+  const TrackingNumber__c:string;
+  export default TrackingNumber__c;
+}
+declare module "@salesforce/schema/Opportunity.OrderNumber__c" {
+  const OrderNumber__c:string;
+  export default OrderNumber__c;
+}
+declare module "@salesforce/schema/Opportunity.CurrentGenerators__c" {
+  const CurrentGenerators__c:string;
+  export default CurrentGenerators__c;
+}
+declare module "@salesforce/schema/Opportunity.MainCompetitors__c" {
+  const MainCompetitors__c:string;
+  export default MainCompetitors__c;
+}
+declare module "@salesforce/schema/Opportunity.Car__r" {
+  const Car__r:any;
+  export default Car__r;
+}
+declare module "@salesforce/schema/Opportunity.Car__c" {
+  const Car__c:any;
+  export default Car__c;
+}
+declare module "@salesforce/schema/Opportunity.WarningPoint__c" {
+  const WarningPoint__c:boolean;
+  export default WarningPoint__c;
+}

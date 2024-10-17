@@ -443,7 +443,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "NearAddress",
+          "label": "Near Address",
           "validFor": null,
           "value": "NearAddress"
         },
@@ -464,7 +464,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "ExtendedZip",
+          "label": "Extended Zip",
           "validFor": null,
           "value": "ExtendedZip"
         },
@@ -674,7 +674,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "NearAddress",
+          "label": "Near Address",
           "validFor": null,
           "value": "NearAddress"
         },
@@ -695,7 +695,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "ExtendedZip",
+          "label": "Extended Zip",
           "validFor": null,
           "value": "ExtendedZip"
         },
@@ -1125,6 +1125,76 @@
       "relationshipName": null,
       "sortable": true,
       "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Payments Count",
+      "name": "Payments_Count__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Amount Paid",
+      "name": "Amount_Paid__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Amount Left",
+      "name": "Amount_Left__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Opportunity Relation",
+      "name": "Opportunity_Relation__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Opportunity"
+      ],
+      "relationshipName": "Opportunity_Relation__r",
+      "sortable": true,
+      "type": "reference"
     }
   ],
   "label": "Order",
@@ -1140,7 +1210,7 @@
       "restrictedDelete": false
     },
     {
-      "cascadeDelete": true,
+      "cascadeDelete": false,
       "childSObject": "AIRecordInsight",
       "deprecatedAndHidden": false,
       "field": "TargetId",
@@ -1170,6 +1240,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "AsyncOperationTracker",
+      "deprecatedAndHidden": false,
+      "field": "ReferenceEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ReferenceEntityAsyncOperationTrackers",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "AttachedContentDocument",
       "deprecatedAndHidden": false,
@@ -1187,6 +1267,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Attachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CartCheckoutSession",
+      "deprecatedAndHidden": false,
+      "field": "OrderId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CheckoutSessions",
       "restrictedDelete": false
     },
     {
@@ -1247,26 +1337,6 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "CreditMemos",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
-      "childSObject": "DigitalSignature",
-      "deprecatedAndHidden": false,
-      "field": "ParentId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "DigitalSignatures",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": false,
-      "childSObject": "DigitalSignatureChangeEvent",
-      "deprecatedAndHidden": false,
-      "field": "ParentId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -1366,7 +1436,7 @@
       "field": "RelatedRecordId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": null,
+      "relationshipName": "FlowOrchestrationWorkItems",
       "restrictedDelete": false
     },
     {
@@ -1377,6 +1447,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FulfillmentOrder",
+      "deprecatedAndHidden": false,
+      "field": "OrderId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FulfillmentOrders",
       "restrictedDelete": false
     },
     {
@@ -1490,6 +1570,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": true,
+      "childSObject": "Order_Payment__c",
+      "deprecatedAndHidden": false,
+      "field": "Order__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Order_Payments__r",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": false,
       "childSObject": "OutgoingEmail",
       "deprecatedAndHidden": false,
@@ -1541,6 +1631,16 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ProcessInstanceChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ProcessInstanceHistory",
       "deprecatedAndHidden": false,
       "field": "TargetObjectId",
@@ -1587,6 +1687,26 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RevenueAsyncOperation",
+      "deprecatedAndHidden": false,
+      "field": "ReferenceEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ReferenceEntityRevenueAsyncOperations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "RevenueTransactionErrorLog",
+      "deprecatedAndHidden": false,
+      "field": "PrimaryRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PrimaryRevenueTransactionErrorLogs",
       "restrictedDelete": false
     },
     {

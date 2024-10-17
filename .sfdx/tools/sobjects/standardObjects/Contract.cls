@@ -55,6 +55,7 @@ global class Contract {
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
     global List<ActivityHistory> ActivityHistories;
+    global List<AppUsageAssignment> AppUsageAssignments;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;
     global List<CollaborationGroupRecord> RecordAssociatedGroups;
@@ -66,6 +67,7 @@ global class Contract {
     global List<EmailMessage> Emails;
     global List<EntitySubscription> FeedSubscriptionsForEntity;
     global List<Event> Events;
+    global List<FlowOrchestrationWorkItem> FlowOrchestrationWorkItems;
     global List<Note> Notes;
     global List<NoteAndAttachment> NotesAndAttachments;
     global List<OpenActivity> OpenActivities;
@@ -85,9 +87,10 @@ global class Contract {
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowExecutionErrorEvent> ContextRecord;
-    global List<FlowOrchestrationWorkItem> RelatedRecord;
+    global List<FlowRecordRelation> RelatedRecord;
     global List<OrderChangeEvent> Contract;
     global List<OutgoingEmail> RelatedTo;
+    global List<ProcessInstanceChangeEvent> TargetObject;
     global List<TaskChangeEvent> What;
 
     global Contract () 

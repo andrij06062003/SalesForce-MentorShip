@@ -63,12 +63,106 @@
       "inlineHelpText": null,
       "label": "Account Name",
       "name": "Name",
-      "nillable": false,
+      "nillable": true,
       "picklistValues": [],
       "referenceTo": [],
       "relationshipName": null,
       "sortable": true,
       "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "switchablepersonname",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Name",
+      "name": "LastName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "switchablepersonname",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "First Name",
+      "name": "FirstName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "switchablepersonname",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Salutation",
+      "name": "Salutation",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mr.",
+          "validFor": null,
+          "value": "Mr."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Ms.",
+          "validFor": null,
+          "value": "Ms."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mrs.",
+          "validFor": null,
+          "value": "Mrs."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dr.",
+          "validFor": null,
+          "value": "Dr."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Prof.",
+          "validFor": null,
+          "value": "Prof."
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mx.",
+          "validFor": null,
+          "value": "Mx."
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
     },
     {
       "aggregatable": true,
@@ -136,6 +230,25 @@
       "relationshipName": null,
       "sortable": true,
       "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record Type ID",
+      "name": "RecordTypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordType"
+      ],
+      "relationshipName": "RecordType",
+      "sortable": true,
+      "type": "reference"
     },
     {
       "aggregatable": true,
@@ -297,7 +410,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "NearAddress",
+          "label": "Near Address",
           "validFor": null,
           "value": "NearAddress"
         },
@@ -318,7 +431,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "ExtendedZip",
+          "label": "Extended Zip",
           "validFor": null,
           "value": "ExtendedZip"
         },
@@ -528,7 +641,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "NearAddress",
+          "label": "Near Address",
           "validFor": null,
           "value": "NearAddress"
         },
@@ -549,7 +662,7 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "ExtendedZip",
+          "label": "Extended Zip",
           "validFor": null,
           "value": "ExtendedZip"
         },
@@ -1299,6 +1412,797 @@
       "filterable": true,
       "groupable": true,
       "inlineHelpText": null,
+      "label": "Contact ID",
+      "name": "PersonContactId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": "PersonContact",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Person Account",
+      "name": "IsPersonAccount",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing Street",
+      "name": "PersonMailingStreet",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing City",
+      "name": "PersonMailingCity",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing State/Province",
+      "name": "PersonMailingState",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing Zip/Postal Code",
+      "name": "PersonMailingPostalCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing Country",
+      "name": "PersonMailingCountry",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Mailing Latitude",
+      "name": "PersonMailingLatitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Mailing Longitude",
+      "name": "PersonMailingLongitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing Geocode Accuracy",
+      "name": "PersonMailingGeocodeAccuracy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Address",
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Near Address",
+          "validFor": null,
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block",
+          "validFor": null,
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Extended Zip",
+          "validFor": null,
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip",
+          "validFor": null,
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Neighborhood",
+          "validFor": null,
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "County",
+          "validFor": null,
+          "value": "County"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unknown",
+          "validFor": null,
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Mailing Address",
+      "name": "PersonMailingAddress",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "address"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Other Street",
+      "name": "PersonOtherStreet",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Other City",
+      "name": "PersonOtherCity",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Other State/Province",
+      "name": "PersonOtherState",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Other Zip/Postal Code",
+      "name": "PersonOtherPostalCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Other Country",
+      "name": "PersonOtherCountry",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Other Latitude",
+      "name": "PersonOtherLatitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Other Longitude",
+      "name": "PersonOtherLongitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Other Geocode Accuracy",
+      "name": "PersonOtherGeocodeAccuracy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Address",
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Near Address",
+          "validFor": null,
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block",
+          "validFor": null,
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Street",
+          "validFor": null,
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Extended Zip",
+          "validFor": null,
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Zip",
+          "validFor": null,
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Neighborhood",
+          "validFor": null,
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "City",
+          "validFor": null,
+          "value": "City"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "County",
+          "validFor": null,
+          "value": "County"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "State",
+          "validFor": null,
+          "value": "State"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unknown",
+          "validFor": null,
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Other Address",
+      "name": "PersonOtherAddress",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "address"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mobile",
+      "name": "PersonMobilePhone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Home Phone",
+      "name": "PersonHomePhone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Other Phone",
+      "name": "PersonOtherPhone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Asst. Phone",
+      "name": "PersonAssistantPhone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Email",
+      "name": "PersonEmail",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "email"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Title",
+      "name": "PersonTitle",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Department",
+      "name": "PersonDepartment",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Assistant",
+      "name": "PersonAssistantName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Lead Source",
+      "name": "PersonLeadSource",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Web",
+          "validFor": null,
+          "value": "Web"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone Inquiry",
+          "validFor": null,
+          "value": "Phone Inquiry"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Partner Referral",
+          "validFor": null,
+          "value": "Partner Referral"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Purchased List",
+          "validFor": null,
+          "value": "Purchased List"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Birthdate",
+      "name": "PersonBirthdate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Stay-in-Touch Request Date",
+      "name": "PersonLastCURequestDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Stay-in-Touch Save Date",
+      "name": "PersonLastCUUpdateDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Email Bounced Reason",
+      "name": "PersonEmailBouncedReason",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Email Bounced Date",
+      "name": "PersonEmailBouncedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Individual ID",
+      "name": "PersonIndividualId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Individual"
+      ],
+      "relationshipName": "PersonIndividual",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
       "label": "Data.com Key",
       "name": "Jigsaw",
       "nillable": true,
@@ -1591,6 +2495,337 @@
       "relationshipName": "OperatingHours",
       "sortable": true,
       "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Customer Priority",
+      "name": "CustomerPriority__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "High",
+          "validFor": null,
+          "value": "High"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Low",
+          "validFor": null,
+          "value": "Low"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Medium",
+          "validFor": null,
+          "value": "Medium"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SLA",
+      "name": "SLA__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Gold",
+          "validFor": null,
+          "value": "Gold"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Silver",
+          "validFor": null,
+          "value": "Silver"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Platinum",
+          "validFor": null,
+          "value": "Platinum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bronze",
+          "validFor": null,
+          "value": "Bronze"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active",
+      "name": "Active__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Number of Locations",
+      "name": "NumberofLocations__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Upsell Opportunity",
+      "name": "UpsellOpportunity__c",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maybe",
+          "validFor": null,
+          "value": "Maybe"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "No",
+          "validFor": null,
+          "value": "No"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Yes",
+          "validFor": null,
+          "value": "Yes"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SLA Serial Number",
+      "name": "SLASerialNumber__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SLA Expiration Date",
+      "name": "SLAExpirationDate__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Total Cars Bought",
+      "name": "Total_Cars_Bought__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Discount",
+      "name": "Discount__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Discount Percent",
+      "name": "Discount_Percent__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "percent"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": true,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active Buyer",
+      "name": "Active_Buyer__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Level",
+      "name": "Level__pc",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Secondary",
+          "validFor": null,
+          "value": "Secondary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tertiary",
+          "validFor": null,
+          "value": "Tertiary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Primary",
+          "validFor": null,
+          "value": "Primary"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Languages",
+      "name": "Languages__pc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     }
   ],
   "label": "Account",
@@ -1606,13 +2841,23 @@
       "restrictedDelete": false
     },
     {
-      "cascadeDelete": true,
+      "cascadeDelete": false,
       "childSObject": "AIRecordInsight",
       "deprecatedAndHidden": false,
       "field": "TargetId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AcceptedEventRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonAcceptedEventRelations",
       "restrictedDelete": false
     },
     {
@@ -1630,6 +2875,16 @@
       "childSObject": "AccountChangeEvent",
       "deprecatedAndHidden": false,
       "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AccountChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "PersonContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -1656,10 +2911,30 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": true,
+      "childSObject": "AccountContactRole",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonAccountContactRoles",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": false,
       "childSObject": "AccountContactRoleChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AccountContactRoleChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -1726,6 +3001,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": true,
+      "childSObject": "ActivityHistory",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonActivityHistories",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": false,
       "childSObject": "AlternativePaymentMethod",
       "deprecatedAndHidden": false,
@@ -1766,6 +3051,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": true,
+      "childSObject": "Asset",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonAssets",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": false,
       "childSObject": "AssetChangeEvent",
       "deprecatedAndHidden": false,
@@ -1790,6 +3085,16 @@
       "childSObject": "AssetChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AssetServicedById",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AssetChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -1866,10 +3171,30 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": true,
+      "childSObject": "CampaignMember",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonCampaignMembers",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": false,
       "childSObject": "CampaignMember",
       "deprecatedAndHidden": false,
       "field": "LeadOrContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CampaignMemberChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -1897,12 +3222,42 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "Case",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonCases",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "CaseChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CaseChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CaseContactRole",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonCaseContactRoles",
       "restrictedDelete": false
     },
     {
@@ -1963,6 +3318,26 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContactChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ReportsToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContactCleanInfo",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonContactCleanInfos",
       "restrictedDelete": false
     },
     {
@@ -2036,6 +3411,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "ContactRequest",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonContactRequests",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "ContentDistribution",
       "deprecatedAndHidden": false,
@@ -2097,12 +3482,62 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "Contract",
+      "deprecatedAndHidden": false,
+      "field": "CustomerSignedId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonContractsSigned",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ContractChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContractChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "CustomerSignedId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContractContactRole",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonContractContactRoles",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ConversationParticipant",
+      "deprecatedAndHidden": false,
+      "field": "ParticipantEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonConversationParticipants",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "CreditMemo",
+      "deprecatedAndHidden": false,
+      "field": "BillToContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonCreditMemos",
       "restrictedDelete": false
     },
     {
@@ -2113,6 +3548,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "CreditMemos",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "DeclinedEventRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonDeclinedEventRelations",
       "restrictedDelete": false
     },
     {
@@ -2137,6 +3582,26 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "EmailBounceEvent",
+      "deprecatedAndHidden": false,
+      "field": "BouncedObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailMessage",
+      "deprecatedAndHidden": false,
+      "field": "FromId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "EmailMessage",
       "deprecatedAndHidden": false,
       "field": "RelatedToId",
@@ -2157,6 +3622,26 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "EmailMessageRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonEmailMessageRelations",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EmailStatus",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonEmailStatuses",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "Entitlement",
       "deprecatedAndHidden": false,
       "field": "AccountId",
@@ -2173,6 +3658,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EntitlementContact",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonEntitlementContacts",
       "restrictedDelete": false
     },
     {
@@ -2206,6 +3701,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": true,
+      "childSObject": "Event",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonEvents",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": false,
       "childSObject": "EventChangeEvent",
       "deprecatedAndHidden": false,
@@ -2227,9 +3732,9 @@
     },
     {
       "cascadeDelete": false,
-      "childSObject": "EventRelationChangeEvent",
+      "childSObject": "EventChangeEvent",
       "deprecatedAndHidden": false,
-      "field": "RelationId",
+      "field": "WhoId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2237,19 +3742,9 @@
     },
     {
       "cascadeDelete": false,
-      "childSObject": "Expense",
+      "childSObject": "EventRelationChangeEvent",
       "deprecatedAndHidden": false,
-      "field": "AccountId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "Expenses",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": false,
-      "childSObject": "ExpenseChangeEvent",
-      "deprecatedAndHidden": false,
-      "field": "AccountId",
+      "field": "RelationId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2332,7 +3827,7 @@
       "field": "RelatedRecordId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": null,
+      "relationshipName": "FlowOrchestrationWorkItems",
       "restrictedDelete": false
     },
     {
@@ -2343,6 +3838,36 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FulfillmentOrder",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FulfillmentOrders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FulfillmentOrder",
+      "deprecatedAndHidden": false,
+      "field": "BillToContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonFulfillmentOrders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Invoice",
+      "deprecatedAndHidden": false,
+      "field": "BillToContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonInvoices",
       "restrictedDelete": false
     },
     {
@@ -2367,6 +3892,16 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "Lead",
+      "deprecatedAndHidden": false,
+      "field": "ConvertedContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "LeadChangeEvent",
       "deprecatedAndHidden": false,
       "field": "ConvertedAccountId",
@@ -2377,19 +3912,49 @@
     },
     {
       "cascadeDelete": false,
-      "childSObject": "MaintenancePlan",
+      "childSObject": "LeadChangeEvent",
       "deprecatedAndHidden": false,
-      "field": "AccountId",
+      "field": "ConvertedContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": "MaintenancePlans",
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
       "cascadeDelete": false,
-      "childSObject": "MaintenancePlanChangeEvent",
+      "childSObject": "ListEmail",
       "deprecatedAndHidden": false,
-      "field": "AccountId",
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonListEmails",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ListEmailChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedToId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ListEmailIndividualRecipient",
+      "deprecatedAndHidden": false,
+      "field": "RecipientId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonListEmailIndividualRecipients",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "MatchingInformation",
+      "deprecatedAndHidden": false,
+      "field": "SFDCIdId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2407,12 +3972,32 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "MessagingEndUser",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonMessagingEndUsers",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "MessagingSession",
       "deprecatedAndHidden": false,
       "field": "EndUserAccountId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "MessagingSessions",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "MessagingSession",
+      "deprecatedAndHidden": false,
+      "field": "EndUserContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonMessagingSessions",
       "restrictedDelete": false
     },
     {
@@ -2447,6 +4032,16 @@
     },
     {
       "cascadeDelete": true,
+      "childSObject": "OpenActivity",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonOpenActivities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
       "childSObject": "Opportunity",
       "deprecatedAndHidden": false,
       "field": "AccountId",
@@ -2457,9 +4052,49 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "Opportunity",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonOpportunities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "OpportunityChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OpportunityChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "OpportunityContactRole",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonOpportunityContactRoles",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OpportunityContactRoleChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2487,9 +4122,69 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "Order",
+      "deprecatedAndHidden": false,
+      "field": "BillToContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Order",
+      "deprecatedAndHidden": false,
+      "field": "CustomerAuthorizedById",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Order",
+      "deprecatedAndHidden": false,
+      "field": "ShipToContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "OrderChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OrderChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "BillToContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OrderChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "CustomerAuthorizedById",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OrderChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ShipToContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2503,6 +4198,26 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmail",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "OutgoingEmailRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonOutgoingEmailRelations",
       "restrictedDelete": false
     },
     {
@@ -2576,6 +4291,46 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "PendingOrderSummary",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PendingOrderSummaries",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PendingOrderSummary",
+      "deprecatedAndHidden": false,
+      "field": "BillToContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonPendingOrderSummaries",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PendingOrderSummaryChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "PendingOrderSummaryChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "BillToContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "ProcessInstance",
       "deprecatedAndHidden": false,
@@ -2583,6 +4338,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "ProcessInstances",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ProcessInstanceChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "TargetObjectId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
       "restrictedDelete": false
     },
     {
@@ -2597,42 +4362,22 @@
     },
     {
       "cascadeDelete": false,
-      "childSObject": "ProductRequest",
+      "childSObject": "Product2",
       "deprecatedAndHidden": false,
-      "field": "AccountId",
+      "field": "Buyer_Contact__c",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": "ProductRequests",
+      "relationshipName": "Cars__pr",
       "restrictedDelete": false
     },
     {
       "cascadeDelete": false,
-      "childSObject": "ProductRequestChangeEvent",
+      "childSObject": "Product2",
       "deprecatedAndHidden": false,
-      "field": "AccountId",
+      "field": "Customer__c",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
-      "relationshipName": null,
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": false,
-      "childSObject": "ProductRequestLineItem",
-      "deprecatedAndHidden": false,
-      "field": "AccountId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "ProductRequestLineItems",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": false,
-      "childSObject": "ProductRequestLineItemChangeEvent",
-      "deprecatedAndHidden": false,
-      "field": "AccountId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": null,
+      "relationshipName": "Cars__r",
       "restrictedDelete": false
     },
     {
@@ -2707,9 +4452,29 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ReturnOrder",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonReturnOrders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ReturnOrderChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ReturnOrderChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2736,6 +4501,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "ServiceAppointment",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonServiceAppointments",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "ServiceAppointment",
       "deprecatedAndHidden": false,
@@ -2746,10 +4521,30 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": true,
+      "childSObject": "ServiceAppointmentAttendee",
+      "deprecatedAndHidden": false,
+      "field": "AttendeeId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": false,
       "childSObject": "ServiceAppointmentChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceAppointmentChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2777,9 +4572,29 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "ServiceContract",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonServiceContracts",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "ServiceContractChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ServiceContractChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2806,26 +4621,6 @@
       "restrictedDelete": false
     },
     {
-      "cascadeDelete": true,
-      "childSObject": "Swarm",
-      "deprecatedAndHidden": false,
-      "field": "RelatedRecordId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "Swarms",
-      "restrictedDelete": false
-    },
-    {
-      "cascadeDelete": true,
-      "childSObject": "SwarmMember",
-      "deprecatedAndHidden": false,
-      "field": "RelatedRecordId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "SwarmMembers",
-      "restrictedDelete": false
-    },
-    {
       "cascadeDelete": false,
       "childSObject": "Task",
       "deprecatedAndHidden": false,
@@ -2846,6 +4641,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": true,
+      "childSObject": "Task",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonTasks",
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": false,
       "childSObject": "TaskChangeEvent",
       "deprecatedAndHidden": false,
@@ -2866,6 +4671,16 @@
       "restrictedDelete": false
     },
     {
+      "cascadeDelete": false,
+      "childSObject": "TaskChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "WhoId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
       "cascadeDelete": true,
       "childSObject": "TopicAssignment",
       "deprecatedAndHidden": false,
@@ -2873,6 +4688,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "TopicAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UndecidedEventRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonUndecidedEventRelations",
       "restrictedDelete": false
     },
     {
@@ -2887,9 +4712,59 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "User",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonUsers",
+      "restrictedDelete": true
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "UserChangeEvent",
       "deprecatedAndHidden": false,
       "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "UserChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "UserDefinedLabelAssignment",
+      "deprecatedAndHidden": false,
+      "field": "ItemId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "UserDefinedLabelAssignments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "UserEmailPreferredPerson",
+      "deprecatedAndHidden": false,
+      "field": "PersonRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonPersonRecord",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "UserPrioritizedRecord",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,
@@ -2907,12 +4782,72 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RelatedRecords",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "WaitlistParticipant",
+      "deprecatedAndHidden": false,
+      "field": "ParticipantId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "WaitlistParticipants",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WebCart",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Carts",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WebCartChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "AccountId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "WorkOrder",
       "deprecatedAndHidden": false,
       "field": "AccountId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "WorkOrders",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "WorkOrder",
+      "deprecatedAndHidden": false,
+      "field": "ContactId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "PersonWorkOrders",
       "restrictedDelete": false
     },
     {
@@ -2926,20 +4861,10 @@
       "restrictedDelete": false
     },
     {
-      "cascadeDelete": true,
-      "childSObject": "WorkPlanSelectionRule",
-      "deprecatedAndHidden": false,
-      "field": "AccountId",
-      "junctionIdListNames": [],
-      "junctionReferenceTo": [],
-      "relationshipName": "WorkPlanSelectionRules",
-      "restrictedDelete": false
-    },
-    {
       "cascadeDelete": false,
-      "childSObject": "WorkPlanSelectionRuleChangeEvent",
+      "childSObject": "WorkOrderChangeEvent",
       "deprecatedAndHidden": false,
-      "field": "AccountId",
+      "field": "ContactId",
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": null,

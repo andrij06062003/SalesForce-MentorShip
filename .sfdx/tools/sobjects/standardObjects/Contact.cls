@@ -13,6 +13,7 @@ global class Contact {
     global Id MasterRecordId;
     global Account Account;
     global Id AccountId;
+    global Boolean IsPersonAccount;
     global String LastName;
     global String FirstName;
     global String Salutation;
@@ -73,6 +74,10 @@ global class Contact {
     global String CleanStatus;
     global Individual Individual;
     global Id IndividualId;
+    global Boolean IsPriorityRecord;
+    global String ContactSource;
+    global String Level__c;
+    global String Languages__c;
     global List<AcceptedEventRelation> AcceptedEventRelations;
     global List<AccountContactRole> AccountContactRoles;
     global List<ActivityHistory> ActivityHistories;
@@ -104,9 +109,11 @@ global class Contact {
     global List<EntitySubscription> FeedSubscriptionsForEntity;
     global List<Event> Events;
     global List<EventRelation> EventRelations;
+    global List<FlowOrchestrationWorkItem> FlowOrchestrationWorkItems;
+    global List<FulfillmentOrder> FulfillmentOrders;
     global List<Invoice> Invoices;
+    global List<ListEmail> ListEmails;
     global List<ListEmailIndividualRecipient> ListEmailIndividualRecipients;
-    global List<MaintenancePlan> MaintenancePlans;
     global List<MessagingEndUser> MessagingEndUsers;
     global List<MessagingSession> MessagingSessions;
     global List<Note> Notes;
@@ -115,8 +122,10 @@ global class Contact {
     global List<Opportunity> Opportunities;
     global List<OpportunityContactRole> OpportunityContactRoles;
     global List<OutgoingEmailRelation> OutgoingEmailRelations;
+    global List<PendingOrderSummary> PendingOrderSummaries;
     global List<ProcessInstance> ProcessInstances;
     global List<ProcessInstanceHistory> ProcessSteps;
+    global List<Product2> Cars__r;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
     global List<ReturnOrder> ReturnOrders;
@@ -126,10 +135,14 @@ global class Contact {
     global List<TopicAssignment> TopicAssignments;
     global List<UndecidedEventRelation> UndecidedEventRelations;
     global List<User> Users;
+    global List<UserDefinedLabelAssignment> UserDefinedLabelAssignments;
     global List<UserEmailPreferredPerson> PersonRecord;
+    global List<VoiceCall> RelatedRecords;
+    global List<WaitlistParticipant> WaitlistParticipants;
     global List<WorkOrder> WorkOrders;
     global List<AIInsightValue> SobjectLookupValue;
     global List<AIRecordInsight> Target;
+    global List<Account> PersonContact;
     global List<AccountContactRoleChangeEvent> Contact;
     global List<AuthorizationFormConsentChangeEvent> ConsentGiver;
     global List<CampaignMember> LeadOrContact;
@@ -141,13 +154,15 @@ global class Contact {
     global List<ContentDocumentLinkChangeEvent> LinkedEntity;
     global List<ContentVersion> FirstPublishLocation;
     global List<ContractChangeEvent> CustomerSigned;
+    global List<EmailBounceEvent> BouncedObject;
+    global List<EmailMessage> From;
     global List<EventChangeEvent> Who;
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowExecutionErrorEvent> ContextRecord;
-    global List<FlowOrchestrationWorkItem> RelatedRecord;
+    global List<FlowRecordRelation> RelatedRecord;
     global List<Lead> ConvertedContact;
-    global List<MaintenancePlanChangeEvent> Contact;
+    global List<ListEmailChangeEvent> RelatedTo;
     global List<MatchingInformation> SFDCId;
     global List<OpportunityChangeEvent> Contact;
     global List<Order> BillToContact;
@@ -157,9 +172,16 @@ global class Contact {
     global List<OrderChangeEvent> CustomerAuthorizedBy;
     global List<OrderChangeEvent> ShipToContact;
     global List<OutgoingEmail> Who;
+    global List<PendingOrderSummaryChangeEvent> BillToContact;
+    global List<ProcessInstanceChangeEvent> TargetObject;
     global List<ReturnOrderChangeEvent> Contact;
+    global List<ServiceAppointmentAttendee> Attendee;
+    global List<ServiceAppointmentChangeEvent> Contact;
     global List<TaskChangeEvent> Who;
     global List<UserChangeEvent> Contact;
+    global List<UserPrioritizedRecord> Target;
+    global List<VoiceCallChangeEvent> RelatedRecord;
+    global List<WorkOrderChangeEvent> Contact;
 
     global Contact () 
     {

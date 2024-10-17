@@ -34,6 +34,10 @@ declare module "@salesforce/schema/RecordType.IsActive" {
   const IsActive:boolean;
   export default IsActive;
 }
+declare module "@salesforce/schema/RecordType.IsPersonType" {
+  const IsPersonType:boolean;
+  export default IsPersonType;
+}
 declare module "@salesforce/schema/RecordType.CreatedBy" {
   const CreatedBy:any;
   export default CreatedBy;

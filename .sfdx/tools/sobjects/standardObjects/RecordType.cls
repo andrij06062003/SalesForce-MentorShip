@@ -16,6 +16,7 @@ global class RecordType {
     global Id BusinessProcessId;
     global String SobjectType;
     global Boolean IsActive;
+    global Boolean IsPersonType;
     global User CreatedBy;
     global Id CreatedById;
     global Datetime CreatedDate;
