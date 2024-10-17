@@ -1,0 +1,405 @@
+{
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fulfillment Order Status Changed Event Replay ID",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fulfillment Order Status Changed Event Event UUID",
+      "name": "EventUuid",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Fulfillment Order ID",
+      "name": "FulfillmentOrderId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "FulfillmentOrder"
+      ],
+      "relationshipName": "FulfillmentOrder",
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Status",
+      "name": "OldStatus",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Draft",
+          "validFor": null,
+          "value": "Draft"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allocated",
+          "validFor": null,
+          "value": "Allocated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assigned",
+          "validFor": null,
+          "value": "Assigned"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pickpack",
+          "validFor": null,
+          "value": "Pickpack"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilled",
+          "validFor": null,
+          "value": "Fulfilled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cancelled",
+          "validFor": null,
+          "value": "Cancelled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rejected",
+          "validFor": null,
+          "value": "Rejected"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Printed",
+          "validFor": null,
+          "value": "Printed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pick Complete",
+          "validFor": null,
+          "value": "Pick Complete"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pack Complete",
+          "validFor": null,
+          "value": "Pack Complete"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Status",
+      "name": "NewStatus",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Draft",
+          "validFor": null,
+          "value": "Draft"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allocated",
+          "validFor": null,
+          "value": "Allocated"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Assigned",
+          "validFor": null,
+          "value": "Assigned"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pickpack",
+          "validFor": null,
+          "value": "Pickpack"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilled",
+          "validFor": null,
+          "value": "Fulfilled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Cancelled",
+          "validFor": null,
+          "value": "Cancelled"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rejected",
+          "validFor": null,
+          "value": "Rejected"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Printed",
+          "validFor": null,
+          "value": "Printed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pick Complete",
+          "validFor": null,
+          "value": "Pick Complete"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pack Complete",
+          "validFor": null,
+          "value": "Pack Complete"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Status Category",
+      "name": "OldStatusCategory",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Draft",
+          "validFor": null,
+          "value": "DRAFT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activated",
+          "validFor": null,
+          "value": "ACTIVATED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilling",
+          "validFor": null,
+          "value": "FULFILLING"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed",
+          "validFor": null,
+          "value": "CLOSED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Canceled",
+          "validFor": null,
+          "value": "CANCELLED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rejected",
+          "validFor": null,
+          "value": "REJECTED"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Status Category",
+      "name": "NewStatusCategory",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Draft",
+          "validFor": null,
+          "value": "DRAFT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Activated",
+          "validFor": null,
+          "value": "ACTIVATED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fulfilling",
+          "validFor": null,
+          "value": "FULFILLING"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Closed",
+          "validFor": null,
+          "value": "CLOSED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Canceled",
+          "validFor": null,
+          "value": "CANCELLED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Rejected",
+          "validFor": null,
+          "value": "REJECTED"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    }
+  ],
+  "label": "Fulfillment Order Status Changed Event",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "AsyncOperationEvent",
+      "deprecatedAndHidden": false,
+      "field": "SourceEvent",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "FOStatusChangedEvent",
+  "queryable": false
+}
