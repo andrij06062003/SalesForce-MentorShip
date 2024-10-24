@@ -1,0 +1,748 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Revenue Transaction Error Log ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Error Log Number",
+      "name": "ErrorLogNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary Record ID",
+      "name": "PrimaryRecordId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Asset",
+        "AsyncOperationTracker",
+        "CardPaymentMethod",
+        "CreditMemo",
+        "Invoice",
+        "Order",
+        "OrderItem",
+        "Payment",
+        "PaymentGateway",
+        "Refund",
+        "RevenueAsyncOperation"
+      ],
+      "relationshipName": "PrimaryRecord",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Related Record ID",
+      "name": "RelatedRecordId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Asset",
+        "CreditMemo",
+        "CreditMemoLine",
+        "Invoice",
+        "InvoiceLine",
+        "OrderItem",
+        "Payment",
+        "Refund"
+      ],
+      "relationshipName": "RelatedRecord",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Error Code",
+      "name": "ErrorCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Error Message",
+      "name": "ErrorMessage",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Category",
+      "name": "Category",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order to Asset",
+          "validFor": null,
+          "value": "OrderToAsset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OrderItemToAsset",
+          "validFor": null,
+          "value": "OrderItemToAsset"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order to Billing Schedule",
+          "validFor": null,
+          "value": "OrderToBillingSchedule"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OrderToBillingScheduleContextAware",
+          "validFor": null,
+          "value": "OrderToBillingScheduleContextAware"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Payment Sale",
+          "validFor": null,
+          "value": "PaymentSale"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Initiate Amendment",
+          "validFor": null,
+          "value": "InitiateAmendment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Initiate Cancellation",
+          "validFor": null,
+          "value": "InitiateCancel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Initiate Renewal",
+          "validFor": null,
+          "value": "InitiateRenewal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Insufficient Access to start Invoice run",
+          "validFor": null,
+          "value": "InsufficientAccess"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Run Selection Step",
+          "validFor": null,
+          "value": "InvoiceBatchRunSelectionStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Run Pre Processor",
+          "validFor": null,
+          "value": "InvoiceBatchRunPreProcessor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "InvoiceBatchRunErrorHandlerDPEStep",
+          "validFor": null,
+          "value": "InvoiceBatchRunErrorHandlerDPEStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Run Invoice Generation",
+          "validFor": null,
+          "value": "InvoiceBatchRunInvoiceGeneration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Run Tax Processor",
+          "validFor": null,
+          "value": "InvoiceBatchRunTaxProcessor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Run Post Processor",
+          "validFor": null,
+          "value": "InvoiceBatchRunPostProcessor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Run Summarizer",
+          "validFor": null,
+          "value": "InvoiceBatchRunSummarizer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Run Recovery",
+          "validFor": null,
+          "value": "InvoiceBatchRunRecovery"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Run",
+          "validFor": null,
+          "value": "InvoiceBatchRun"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "InvoiceBatchDraftToPostedRun",
+          "validFor": null,
+          "value": "InvoiceBatchDraftToPostedRun"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Draft to Posted Run Selection Step",
+          "validFor": null,
+          "value": "InvoiceBatchDraftToPostedRunSelectionStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Batch Draft to Posted Run Tax Pre Processor",
+          "validFor": null,
+          "value": "InvoiceBatchDraftToPostedRunTaxPreProcessor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "InvoiceBatchRunCreditApplicationStep",
+          "validFor": null,
+          "value": "InvoiceBatchRunCreditApplicationStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TransactionToContract",
+          "validFor": null,
+          "value": "TransactionToContract"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Automated Negative Invoice Line Conversion",
+          "validFor": null,
+          "value": "AutomatedNegativeInvoiceLineConversion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AutomaticRefunds",
+          "validFor": null,
+          "value": "AutomaticRefunds"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "QuoteToOrder",
+          "validFor": null,
+          "value": "QuoteToOrder"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Tax Calculation Failure",
+          "validFor": null,
+          "value": "OrderTaxCalculationFailure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "QuotePriceCalculationFailure",
+          "validFor": null,
+          "value": "QuotePriceCalculationFailure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "QuoteTaxCalculationFailure",
+          "validFor": null,
+          "value": "QuoteTaxCalculationFailure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Standalone Credit API",
+          "validFor": null,
+          "value": "StandaloneCreditAPI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Credit Invoice API",
+          "validFor": null,
+          "value": "CreditInvoiceAPI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Void Posted Invoice API",
+          "validFor": null,
+          "value": "VoidPostedInvoiceAPI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Credit Tax Integration API",
+          "validFor": null,
+          "value": "CreditTaxIntegrationAPI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Apply API",
+          "validFor": null,
+          "value": "ApplyAPI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Core Invoice Generation Failure",
+          "validFor": null,
+          "value": "Core Invoice Generation Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ConvertNegativeInvoiceLineToCredit",
+          "validFor": null,
+          "value": "ConvertNegativeInvoiceLineToCredit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Payment Schedule Generation",
+          "validFor": null,
+          "value": "PaymentScheduleGeneration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MaterialLineGeneration",
+          "validFor": null,
+          "value": "MaterialLineGeneration"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Pre Credit Tax Failure",
+          "validFor": null,
+          "value": "Pre Credit Tax Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Post Credit Tax Failure",
+          "validFor": null,
+          "value": "Post Credit Tax Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Unknown Failure",
+          "validFor": null,
+          "value": "Unknown Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invalid Tax Integration Input",
+          "validFor": null,
+          "value": "Invalid Tax Integration Input"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invalid Tax API Input",
+          "validFor": null,
+          "value": "Invalid Tax API Input"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Tax API Failure",
+          "validFor": null,
+          "value": "Tax API Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Post Tax API Failure",
+          "validFor": null,
+          "value": "Post Tax API Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Invoice Draft to Posted API",
+          "validFor": null,
+          "value": "InvoiceDraftToPostedApi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RuleLibraryJobDeploymentFailed",
+          "validFor": null,
+          "value": "RuleLibraryJobDeploymentFailed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RuleLibraryDeploymentFailed",
+          "validFor": null,
+          "value": "RuleLibraryDeploymentFailed"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Legal Entity Accounting Period Closure",
+          "validFor": null,
+          "value": "Legal Entity Accounting Period Closure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Initiate DRO Fulfillment Failure",
+          "validFor": null,
+          "value": "Initiate DRO Fulfillment Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DRO Order Decomposition Failure",
+          "validFor": null,
+          "value": "DRO Order Decomposition Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DRO Plan Composition Failure",
+          "validFor": null,
+          "value": "DRO Plan Composition Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DRO Technical Assetization Failure",
+          "validFor": null,
+          "value": "DRO Technical Assetization Failure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Order Usage Products Discovery Failure",
+          "validFor": null,
+          "value": "OrderUsageResolutionFailure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quote Usage Products Discovery Failure",
+          "validFor": null,
+          "value": "QuoteUsageResolutionFailure"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Request Identifier",
+      "name": "RequestIdentifier",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Revenue Async Operation ID",
+      "name": "AsyncOperationTrackerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AsyncOperationTracker"
+      ],
+      "relationshipName": "AsyncOperationTracker",
+      "sortable": true,
+      "type": "reference"
+    }
+  ],
+  "label": "Revenue Transaction Error Log",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "RevenueTransactionErrorLogShare",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "RevenueTransactionErrorLog",
+  "queryable": true
+}

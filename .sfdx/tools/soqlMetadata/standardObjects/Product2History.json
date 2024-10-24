@@ -1,0 +1,826 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Car Stage ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Car ID",
+      "name": "Product2Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Product2"
+      ],
+      "relationshipName": "Product2",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Active",
+          "validFor": null,
+          "value": "IsActive"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Brand",
+          "validFor": null,
+          "value": "Brand__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Buyer Contact",
+          "validFor": null,
+          "value": "Buyer_Contact__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car Class",
+          "validFor": null,
+          "value": "ProductClass"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car Code",
+          "validFor": null,
+          "value": "ProductCode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car Description",
+          "validFor": null,
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car Family",
+          "validFor": null,
+          "value": "Family"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car Name",
+          "validFor": null,
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car Record Type",
+          "validFor": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car SKU",
+          "validFor": null,
+          "value": "StockKeepingUnit"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car Status",
+          "validFor": null,
+          "value": "Car_Status__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Car Type",
+          "validFor": null,
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Condition",
+          "validFor": null,
+          "value": "Condition__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Created.",
+          "validFor": null,
+          "value": "created"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Custom Person Merged",
+          "validFor": null,
+          "value": "customPersonMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Customer",
+          "validFor": null,
+          "value": "Customer__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Delivery Date",
+          "validFor": null,
+          "value": "Delivery_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Display URL",
+          "validFor": null,
+          "value": "DisplayUrl"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Drive Type",
+          "validFor": null,
+          "value": "Drive_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Engine Power",
+          "validFor": null,
+          "value": "Engine_Power__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "External Data Source",
+          "validFor": null,
+          "value": "ExternalDataSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "External ID",
+          "validFor": null,
+          "value": "ExternalId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Feed event",
+          "validFor": null,
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Final Sale Price",
+          "validFor": null,
+          "value": "Final_Sale_Price__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fuel Efficiency (L/100km)",
+          "validFor": null,
+          "value": "Fuel_Efficiency_L_100km__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fuel Type",
+          "validFor": null,
+          "value": "Fuel_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Individual Merged",
+          "validFor": null,
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Listing Date",
+          "validFor": null,
+          "value": "Listing_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mileage",
+          "validFor": null,
+          "value": "Mileage__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Model",
+          "validFor": null,
+          "value": "Model__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Opportunity",
+          "validFor": null,
+          "value": "Opportunity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Accepted)",
+          "validFor": null,
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Owner (Assignment)",
+          "validFor": null,
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Quantity Unit Of Measure",
+          "validFor": null,
+          "value": "QuantityUnitOfMeasure"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Range",
+          "validFor": null,
+          "value": "Range__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record locked.",
+          "validFor": null,
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Record unlocked.",
+          "validFor": null,
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Safety Rating",
+          "validFor": null,
+          "value": "Safety_Rating__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sale Date",
+          "validFor": null,
+          "value": "Sale_Date__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sale Price",
+          "validFor": null,
+          "value": "Sale_Price__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Seating Capacity",
+          "validFor": null,
+          "value": "Seating_Capacity__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Seller",
+          "validFor": null,
+          "value": "Seller"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Sold By",
+          "validFor": null,
+          "value": "Sold_By__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Source Product",
+          "validFor": null,
+          "value": "SourceProduct"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Top Speed (Km/h)",
+          "validFor": null,
+          "value": "Top_Speed_Km_h__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Torque (Nm)",
+          "validFor": null,
+          "value": "Torque_Nm__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transmission Type",
+          "validFor": null,
+          "value": "Transmission_Type__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VIN Number",
+          "validFor": null,
+          "value": "VIN_Number__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Warranty",
+          "validFor": null,
+          "value": "Warranty__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Weight (Kg)",
+          "validFor": null,
+          "value": "Weight_Kg__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Year of Manufacture",
+          "validFor": null,
+          "value": "Year_of_Manufacture__c"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Datatype",
+      "name": "DataType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AnyType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AutoNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Base64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "BitVector"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Boolean"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Content"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Currency"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DataCategoryGroupReference"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DateOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DateTime"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Division"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Double"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DynamicEnum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EncryptedBase64"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EncryptedText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EntityId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EnumOrId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "ExternalId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "File"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "HtmlMultiLineText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "HtmlStringPlusClob"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "InetAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Json"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "MultiEnum"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "MultiLineText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Namespace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Percent"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Raw"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SfdcEncryptedText"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SimpleNamespace"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "StringPlusClob"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Switchable_PersonName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Text"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "TimeOnly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Url"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "YearQuarter"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "label": "Car History",
+  "childRelationships": [],
+  "custom": false,
+  "name": "Product2History",
+  "queryable": true
+}

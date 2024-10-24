@@ -1,0 +1,44 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "005Qy000007xUCXIA2",
+      "createdByName": "Andrii Freishyn",
+      "createdDate": "2024-10-07T16:44:23.000Z",
+      "fileName": "triggers/PlannedSales.trigger",
+      "fullName": "PlannedSales",
+      "id": "01qQy000000W6tVIAS",
+      "lastModifiedById": "005Qy000007xUCXIA2",
+      "lastModifiedByName": "Andrii Freishyn",
+      "lastModifiedDate": "2024-10-08T20:47:42.000Z",
+      "manageableState": "unmanaged",
+      "type": "ApexTrigger"
+    },
+    {
+      "createdById": "005Qy000007xUCXIA2",
+      "createdByName": "Andrii Freishyn",
+      "createdDate": "2024-10-08T19:18:00.000Z",
+      "fileName": "triggers/OpportunityStageChanges.trigger",
+      "fullName": "OpportunityStageChanges",
+      "id": "01qQy000000WaGTIA0",
+      "lastModifiedById": "005Qy000007xUCXIA2",
+      "lastModifiedByName": "Andrii Freishyn",
+      "lastModifiedDate": "2024-10-08T20:50:30.000Z",
+      "manageableState": "unmanaged",
+      "type": "ApexTrigger"
+    },
+    {
+      "createdById": "005Qy000007xUCXIA2",
+      "createdByName": "Andrii Freishyn",
+      "createdDate": "2024-10-07T15:14:20.000Z",
+      "fileName": "triggers/OpportunityTrigger.trigger",
+      "fullName": "OpportunityTrigger",
+      "id": "01qQy000000W3lxIAC",
+      "lastModifiedById": "005Qy000007xUCXIA2",
+      "lastModifiedByName": "Andrii Freishyn",
+      "lastModifiedDate": "2024-10-08T20:47:33.000Z",
+      "manageableState": "unmanaged",
+      "type": "ApexTrigger"
+    }
+  ]
+}
