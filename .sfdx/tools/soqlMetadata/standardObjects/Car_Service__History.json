@@ -125,6 +125,13 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "Case",
+          "validFor": null,
+          "value": "Case__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Created.",
           "validFor": null,
           "value": "created"

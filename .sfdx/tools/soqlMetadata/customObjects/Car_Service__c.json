@@ -263,6 +263,25 @@
       "relationshipName": "Car_Relation__r",
       "sortable": true,
       "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Case",
+      "name": "Case__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Case"
+      ],
+      "relationshipName": "Case__r",
+      "sortable": true,
+      "type": "reference"
     }
   ],
   "label": "Car Service",

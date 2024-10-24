@@ -367,6 +367,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "SendMailToGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "service_email__CaseContact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "setup_service_experience__Create_Case"
         },
         {
@@ -692,6 +706,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "QuickActionDefinition.Case.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "QuickActionDefinition.ChangeRequest._LightningUpdateChangeRequest"
         },
         {
@@ -973,6 +994,20 @@
           "label": null,
           "validFor": null,
           "value": "runtime_service_incident_mgmt__CRRI"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "SendMailToGroup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "service_email__CaseContact"
         },
         {
           "active": true,

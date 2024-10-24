@@ -48,6 +48,8 @@ global class EmailMessageChangeEvent {
     global Boolean IsBounced;
     global EmailTemplate EmailTemplate;
     global Id EmailTemplateId;
+    global EmailRoutingAddress EmailRoutingAddress;
+    global Id EmailRoutingAddressId;
     global String AutomationType;
 
     global EmailMessageChangeEvent () 

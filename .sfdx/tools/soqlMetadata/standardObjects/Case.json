@@ -403,7 +403,7 @@
     {
       "aggregatable": true,
       "custom": false,
-      "defaultValue": null,
+      "defaultValue": "Service Cases",
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
@@ -432,6 +432,13 @@
           "label": "Web",
           "validFor": null,
           "value": "Web"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Service Cases",
+          "validFor": null,
+          "value": "Service Cases"
         }
       ],
       "referenceTo": [],
@@ -952,6 +959,57 @@
       "relationshipName": null,
       "sortable": true,
       "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "CarBrand",
+      "name": "CarBrand__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "CarModel",
+      "name": "CarModel__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "CarVinCode",
+      "name": "CarVinCode__c",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
     }
   ],
   "label": "Case",
@@ -1004,6 +1062,16 @@
       "junctionIdListNames": [],
       "junctionReferenceTo": [],
       "relationshipName": "Attachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "Car_Service__c",
+      "deprecatedAndHidden": false,
+      "field": "Case__c",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Car_Services__r",
       "restrictedDelete": false
     },
     {

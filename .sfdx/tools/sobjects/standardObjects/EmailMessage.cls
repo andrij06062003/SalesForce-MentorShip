@@ -54,6 +54,8 @@ global class EmailMessage {
     global Boolean IsBounced;
     global EmailTemplate EmailTemplate;
     global Id EmailTemplateId;
+    global EmailRoutingAddress EmailRoutingAddress;
+    global Id EmailRoutingAddressId;
     global String AutomationType;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;

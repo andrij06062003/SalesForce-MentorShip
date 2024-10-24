@@ -718,6 +718,25 @@
       "filterable": false,
       "groupable": false,
       "inlineHelpText": null,
+      "label": "EmailRoutingAddress ID",
+      "name": "EmailRoutingAddressId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "EmailRoutingAddress"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
       "label": "Automation Type",
       "name": "AutomationType",
       "nillable": true,

@@ -680,13 +680,6 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "analyzeMetric"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
           "value": "answerQuestionsWithHelpDocumentation"
         },
         {
@@ -3809,6 +3802,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "generateMetricInsights"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "generateOrderSummaryUrl"
         },
         {
@@ -4027,6 +4027,13 @@
           "label": null,
           "validFor": null,
           "value": "getCommercePromotionTemplates"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "getContextData"
         },
         {
           "active": true,
@@ -4293,6 +4300,13 @@
           "label": null,
           "validFor": null,
           "value": "getSalesAgreementDetails"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "getSemanticSubMetric"
         },
         {
           "active": true,
@@ -4818,13 +4832,6 @@
           "label": null,
           "validFor": null,
           "value": "LoyaltyPromotionDeepClone"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": null,
-          "validFor": null,
-          "value": "lsCmclContextDataProvider"
         },
         {
           "active": true,
@@ -6119,6 +6126,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "refineSemanticSubMetric"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "refreshActualsCalculation"
         },
         {
@@ -6812,7 +6826,7 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
-          "value": "serializeContextDataRep"
+          "value": "serializeHierarchicalContextData"
         },
         {
           "active": true,

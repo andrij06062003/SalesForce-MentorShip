@@ -551,7 +551,7 @@
     {
       "aggregatable": true,
       "custom": false,
-      "defaultValue": null,
+      "defaultValue": "Web",
       "extraTypeInfo": null,
       "filterable": true,
       "groupable": true,
@@ -562,7 +562,7 @@
       "picklistValues": [
         {
           "active": true,
-          "defaultValue": false,
+          "defaultValue": true,
           "label": "Web",
           "validFor": null,
           "value": "Web"

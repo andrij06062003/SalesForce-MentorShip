@@ -24,6 +24,7 @@ global class EmailServicesAddress {
     global Id LastModifiedById;
     global Datetime LastModifiedDate;
     global Datetime SystemModstamp;
+    global List<EmailRoutingAddress> EmailServicesAddress;
 
     global EmailServicesAddress () 
     {

@@ -401,7 +401,7 @@
     {
       "aggregatable": false,
       "custom": false,
-      "defaultValue": null,
+      "defaultValue": "Service Cases",
       "extraTypeInfo": null,
       "filterable": false,
       "groupable": false,
@@ -430,6 +430,13 @@
           "label": "Web",
           "validFor": null,
           "value": "Web"
+        },
+        {
+          "active": true,
+          "defaultValue": true,
+          "label": "Service Cases",
+          "validFor": null,
+          "value": "Service Cases"
         }
       ],
       "referenceTo": [],
@@ -813,6 +820,57 @@
       "relationshipName": null,
       "sortable": false,
       "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "CarBrand",
+      "name": "CarBrand__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "CarModel",
+      "name": "CarModel__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "CarVinCode",
+      "name": "CarVinCode__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
     }
   ],
   "label": "Case Change Event",

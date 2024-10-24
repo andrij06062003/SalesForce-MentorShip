@@ -186,6 +186,14 @@ declare module "@salesforce/schema/EmailMessage.EmailTemplateId" {
   const EmailTemplateId:any;
   export default EmailTemplateId;
 }
+declare module "@salesforce/schema/EmailMessage.EmailRoutingAddress" {
+  const EmailRoutingAddress:any;
+  export default EmailRoutingAddress;
+}
+declare module "@salesforce/schema/EmailMessage.EmailRoutingAddressId" {
+  const EmailRoutingAddressId:any;
+  export default EmailRoutingAddressId;
+}
 declare module "@salesforce/schema/EmailMessage.AutomationType" {
   const AutomationType:string;
   export default AutomationType;

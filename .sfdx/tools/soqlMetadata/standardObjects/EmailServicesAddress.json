@@ -231,7 +231,18 @@
     }
   ],
   "label": "Email Services Address",
-  "childRelationships": [],
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailRoutingAddress",
+      "deprecatedAndHidden": false,
+      "field": "EmailServicesAddressId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    }
+  ],
   "custom": false,
   "name": "EmailServicesAddress",
   "queryable": true

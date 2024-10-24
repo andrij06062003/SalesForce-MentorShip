@@ -1061,6 +1061,8 @@ global class User {
     global List<EmailMessageChangeEvent> LastModifiedBy;
     global List<EmailMessageRelation> CreatedBy;
     global List<EmailRelay> LastModifiedBy;
+    global List<EmailRoutingAddress> CreatedBy;
+    global List<EmailRoutingAddress> LastModifiedBy;
     global List<EmailServicesAddress> CreatedBy;
     global List<EmailServicesAddress> LastModifiedBy;
     global List<EmailServicesAddress> RunAsUser;

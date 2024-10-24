@@ -132,6 +132,27 @@
         {
           "active": true,
           "defaultValue": false,
+          "label": "CarBrand",
+          "validFor": null,
+          "value": "CarBrand__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CarModel",
+          "validFor": null,
+          "value": "CarModel__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CarVinCode",
+          "validFor": null,
+          "value": "CarVinCode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
           "label": "Case Merged",
           "validFor": null,
           "value": "caseMerged"

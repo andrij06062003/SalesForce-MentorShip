@@ -53,6 +53,7 @@
         "ApexPage",
         "ConnectedApplication",
         "CustomPermission",
+        "EmailRoutingAddress",
         "ExternalClientApplication",
         "ExternalDataSource",
         "MessagingChannel",
@@ -116,6 +117,13 @@
           "label": null,
           "validFor": null,
           "value": "CustomPermission"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EmailRoutingAddress"
         },
         {
           "active": true,

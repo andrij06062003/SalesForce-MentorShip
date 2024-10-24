@@ -194,3 +194,15 @@ declare module "@salesforce/schema/Case.PotentialLiability__c" {
   const PotentialLiability__c:string;
   export default PotentialLiability__c;
 }
+declare module "@salesforce/schema/Case.CarBrand__c" {
+  const CarBrand__c:string;
+  export default CarBrand__c;
+}
+declare module "@salesforce/schema/Case.CarModel__c" {
+  const CarModel__c:string;
+  export default CarModel__c;
+}
+declare module "@salesforce/schema/Case.CarVinCode__c" {
+  const CarVinCode__c:string;
+  export default CarVinCode__c;
+}

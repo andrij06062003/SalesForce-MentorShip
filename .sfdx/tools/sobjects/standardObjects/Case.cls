@@ -56,9 +56,13 @@ global class Case {
     global String SLAViolation__c;
     global String Product__c;
     global String PotentialLiability__c;
+    global String CarBrand__c;
+    global String CarModel__c;
+    global String CarVinCode__c;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;
+    global List<Car_Service__c> Car_Services__r;
     global List<Case> Cases;
     global List<CaseComment> CaseComments;
     global List<CaseContactRole> CaseContactRoles;

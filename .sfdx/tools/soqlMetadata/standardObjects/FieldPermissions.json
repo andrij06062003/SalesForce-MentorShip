@@ -3053,6 +3053,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Car_Service__c.Case__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Car_Service__c.Description__c"
         },
         {
@@ -3096,6 +3103,20 @@
           "label": null,
           "validFor": null,
           "value": "Case.BusinessHoursId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Case.CarBrand__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Case.CarModel__c"
         },
         {
           "active": true,

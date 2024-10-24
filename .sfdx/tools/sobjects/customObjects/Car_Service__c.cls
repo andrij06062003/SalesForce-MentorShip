@@ -26,6 +26,8 @@ global class Car_Service__c {
     global Decimal Amount_Charged__c;
     global Product2 Car_Relation__r;
     global Id Car_Relation__c;
+    global Case Case__r;
+    global Id Case__c;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<Attachment> Attachments;
     global List<Car_Service__History> Histories;

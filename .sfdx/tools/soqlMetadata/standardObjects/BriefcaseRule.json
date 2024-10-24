@@ -5295,6 +5295,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "EmailRoutingAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "EmailTemplate"
         },
         {

@@ -821,6 +821,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "service_email__CaseContact"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "service_email__DraftServiceEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "setup_service_experience__Create_Case"
         },
         {

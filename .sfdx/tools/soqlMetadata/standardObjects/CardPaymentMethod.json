@@ -1263,13 +1263,6 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Other",
-          "validFor": null,
-          "value": "Other"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Apple Pay",
           "validFor": null,
           "value": "ApplePay"
@@ -1371,6 +1364,13 @@
           "label": "Master Card",
           "validFor": null,
           "value": "MasterCard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Other",
+          "validFor": null,
+          "value": "Other"
         },
         {
           "active": true,

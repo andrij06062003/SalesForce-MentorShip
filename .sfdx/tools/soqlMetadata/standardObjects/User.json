@@ -16854,6 +16854,26 @@
     },
     {
       "cascadeDelete": false,
+      "childSObject": "EmailRoutingAddress",
+      "deprecatedAndHidden": false,
+      "field": "CreatedById",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "EmailRoutingAddress",
+      "deprecatedAndHidden": false,
+      "field": "LastModifiedById",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
       "childSObject": "EmailServicesAddress",
       "deprecatedAndHidden": false,
       "field": "CreatedById",

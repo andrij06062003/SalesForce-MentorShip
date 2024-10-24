@@ -19084,6 +19084,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "EmailMessage.EmailRoutingAddressId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "EmailMessage.EmailTemplateId"
         },
         {
@@ -58800,6 +58807,13 @@
           "label": null,
           "validFor": null,
           "value": "EmailMessage.CreatedDate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "EmailMessage.EmailRoutingAddressId"
         },
         {
           "active": true,

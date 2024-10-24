@@ -281,6 +281,13 @@
           "label": "Andrii Freishyn <andrijgaraz@gmail.com>",
           "validFor": null,
           "value": "andrijgaraz@gmail.com"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TASK3 <andrii.freishyn.knm.2020@lpnu.ua>",
+          "validFor": null,
+          "value": "andrii.freishyn.knm.2020@lpnu.ua"
         }
       ],
       "referenceTo": [],
@@ -797,6 +804,25 @@
         "EmailTemplate"
       ],
       "relationshipName": "EmailTemplate",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "EmailRoutingAddress ID",
+      "name": "EmailRoutingAddressId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "EmailRoutingAddress"
+      ],
+      "relationshipName": "EmailRoutingAddress",
       "sortable": true,
       "type": "reference"
     },

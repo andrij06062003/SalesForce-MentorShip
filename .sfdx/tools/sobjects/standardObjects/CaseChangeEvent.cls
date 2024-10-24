@@ -47,6 +47,9 @@ global class CaseChangeEvent {
     global String SLAViolation__c;
     global String Product__c;
     global String PotentialLiability__c;
+    global String CarBrand__c;
+    global String CarModel__c;
+    global String CarVinCode__c;
 
     global CaseChangeEvent () 
     {

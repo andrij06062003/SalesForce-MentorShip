@@ -23,6 +23,7 @@ global class Car_Service__ChangeEvent {
     global Date Date__c;
     global Decimal Amount_Charged__c;
     global Product2 Car_Relation__c;
+    global Case Case__c;
 
     global Car_Service__ChangeEvent () 
     {

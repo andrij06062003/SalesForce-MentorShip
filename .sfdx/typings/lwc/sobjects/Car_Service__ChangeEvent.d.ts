@@ -62,3 +62,7 @@ declare module "@salesforce/schema/Car_Service__ChangeEvent.Car_Relation__c" {
   const Car_Relation__c:any;
   export default Car_Relation__c;
 }
+declare module "@salesforce/schema/Car_Service__ChangeEvent.Case__c" {
+  const Case__c:any;
+  export default Case__c;
+}

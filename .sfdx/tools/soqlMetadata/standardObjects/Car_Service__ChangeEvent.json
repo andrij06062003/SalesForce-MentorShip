@@ -229,6 +229,25 @@
       "relationshipName": null,
       "sortable": false,
       "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": true,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Case",
+      "name": "Case__c",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Case"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
     }
   ],
   "label": "Change Event: Car Service",

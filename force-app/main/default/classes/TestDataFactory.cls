@@ -33,7 +33,7 @@ public class TestDataFactory {
             Name = 'test',
             Brand__c = 'audi',
             Model__c = 'a4',
-            VIN_Number__c = 'qv1213214fqfq',
+            VIN_Number__c = 'PRS112233',
             Mileage__c = 12000,
             Condition__c = 'New',
             Car_Status__c = 'Avaible'
@@ -76,4 +76,19 @@ public class TestDataFactory {
         return oliList;
     }
 
+    public static Case createTestCase(Boolean doInsert){
+    Case cas = new Case(
+        Subject = 'VIN-PRS112233',
+        Description = 'sqdq',
+        Status = 'New',
+        Origin = 'Email'
+
+    );
+
+    if (doInsert) {
+        insert cas;
+    }
+    return cas;
+  }
+    
 }

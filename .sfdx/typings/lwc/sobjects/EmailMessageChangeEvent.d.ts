@@ -162,6 +162,14 @@ declare module "@salesforce/schema/EmailMessageChangeEvent.EmailTemplateId" {
   const EmailTemplateId:any;
   export default EmailTemplateId;
 }
+declare module "@salesforce/schema/EmailMessageChangeEvent.EmailRoutingAddress" {
+  const EmailRoutingAddress:any;
+  export default EmailRoutingAddress;
+}
+declare module "@salesforce/schema/EmailMessageChangeEvent.EmailRoutingAddressId" {
+  const EmailRoutingAddressId:any;
+  export default EmailRoutingAddressId;
+}
 declare module "@salesforce/schema/EmailMessageChangeEvent.AutomationType" {
   const AutomationType:string;
   export default AutomationType;

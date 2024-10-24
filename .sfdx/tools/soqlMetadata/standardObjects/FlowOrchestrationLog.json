@@ -259,16 +259,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "End Work Item",
+          "label": "Cancel Run",
           "validFor": null,
-          "value": "EndWorkItem"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Reassign Work Item",
-          "validFor": null,
-          "value": "ReassignWorkItem"
+          "value": "CancelInstance"
         },
         {
           "active": true,
@@ -280,37 +273,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Cancel Run",
+          "label": "Start Step",
           "validFor": null,
-          "value": "CancelInstance"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Suspend Run",
-          "validFor": null,
-          "value": "SuspendInstance"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "End Run",
-          "validFor": null,
-          "value": "EndInstance"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Fail Run",
-          "validFor": null,
-          "value": "FailInstance"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Resume Run",
-          "validFor": null,
-          "value": "ResumeInstance"
+          "value": "StartStep"
         },
         {
           "active": true,
@@ -322,51 +287,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Suspend Stage",
-          "validFor": null,
-          "value": "SuspendStage"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "End Stage",
-          "validFor": null,
-          "value": "EndStage"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Discontinue Stage",
-          "validFor": null,
-          "value": "DiscontinueStage"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Fail Stage",
-          "validFor": null,
-          "value": "FailStage"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
           "label": "Start Stage",
           "validFor": null,
           "value": "StartStage"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "End Step",
-          "validFor": null,
-          "value": "EndStep"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Discontinue Step",
-          "validFor": null,
-          "value": "DiscontinueStep"
         },
         {
           "active": true,
@@ -378,9 +301,86 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Start Step",
+          "label": "Fail Run",
           "validFor": null,
-          "value": "StartStep"
+          "value": "FailInstance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Fail Stage",
+          "validFor": null,
+          "value": "FailStage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Discontinue Step",
+          "validFor": null,
+          "value": "DiscontinueStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Discontinue Stage",
+          "validFor": null,
+          "value": "DiscontinueStage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Reassign Work Item",
+          "validFor": null,
+          "value": "ReassignWorkItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Resume Run",
+          "validFor": null,
+          "value": "ResumeInstance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suspend Stage",
+          "validFor": null,
+          "value": "SuspendStage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Suspend Run",
+          "validFor": null,
+          "value": "SuspendInstance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End Work Item",
+          "validFor": null,
+          "value": "EndWorkItem"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End Step",
+          "validFor": null,
+          "value": "EndStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End Run",
+          "validFor": null,
+          "value": "EndInstance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End Stage",
+          "validFor": null,
+          "value": "EndStage"
         }
       ],
       "referenceTo": [],

@@ -1258,7 +1258,21 @@
           "defaultValue": false,
           "label": "Attachments",
           "validFor": null,
+          "value": "Field.EmailMessage.AttachmentIds.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attachments",
+          "validFor": null,
           "value": "Field.OutgoingEmail.AttachmentIds.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Attachments",
+          "validFor": null,
+          "value": "Field.EmailMessage.ContentDocumentIds.end"
         },
         {
           "active": true,
@@ -1287,6 +1301,27 @@
           "label": "BCC",
           "validFor": null,
           "value": "Field.OutgoingEmail.BccAddress.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BCC Address",
+          "validFor": null,
+          "value": "Field.EmailMessage.BccAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BCC Addresses",
+          "validFor": null,
+          "value": "Field.EmailMessage.BccAddress.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BCC Addresses",
+          "validFor": null,
+          "value": "Field.EmailMessage.BccAddress"
         },
         {
           "active": true,
@@ -1357,6 +1392,27 @@
           "label": "CC",
           "validFor": null,
           "value": "Field.OutgoingEmail.CcAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC Address",
+          "validFor": null,
+          "value": "Field.EmailMessage.CcAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC Addresses",
+          "validFor": null,
+          "value": "Field.EmailMessage.CcAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CC Addresses",
+          "validFor": null,
+          "value": "Field.EmailMessage.CcAddress.end"
         },
         {
           "active": true,
@@ -1538,14 +1594,14 @@
           "defaultValue": false,
           "label": "Description",
           "validFor": null,
-          "value": "Field.ChangeRequest.Description.end"
+          "value": "Field.Incident.Description.end"
         },
         {
           "active": true,
           "defaultValue": false,
           "label": "Description",
           "validFor": null,
-          "value": "Field.Incident.Description.end"
+          "value": "Field.ChangeRequest.Description.end"
         },
         {
           "active": true,
@@ -1629,7 +1685,21 @@
           "defaultValue": false,
           "label": "Email Action",
           "validFor": null,
+          "value": "QuickAction.Case.Email"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Action",
+          "validFor": null,
           "value": "QuickAction.SendEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Action",
+          "validFor": null,
+          "value": "QuickAction.Case.SendEmail"
         },
         {
           "active": true,
@@ -1637,6 +1707,13 @@
           "label": "Email Template",
           "validFor": null,
           "value": "Field.OutgoingEmail.EmailTemplateId"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Email Template",
+          "validFor": null,
+          "value": "Field.EmailTemplate"
         },
         {
           "active": true,
@@ -1699,7 +1776,21 @@
           "defaultValue": false,
           "label": "From",
           "validFor": null,
+          "value": "Field.EmailMessage.ValidatedFromAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "From",
+          "validFor": null,
           "value": "Field.OutgoingEmail.ValidatedFromAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "From Address",
+          "validFor": null,
+          "value": "Field.EmailMessage.FromAddress"
         },
         {
           "active": true,
@@ -1741,6 +1832,13 @@
           "defaultValue": false,
           "label": "HTML Body",
           "validFor": null,
+          "value": "Field.EmailMessage.HtmlBody.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTML Body",
+          "validFor": null,
           "value": "Field.OutgoingEmail.HtmlBody"
         },
         {
@@ -1748,7 +1846,28 @@
           "defaultValue": false,
           "label": "HTML Body",
           "validFor": null,
+          "value": "Field.EmailMessage.HtmlBody"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTML Body",
+          "validFor": null,
+          "value": "Field.EmailMessage.HtmlBody.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTML Body",
+          "validFor": null,
           "value": "Field.OutgoingEmail.HtmlBody.cursor"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTML Body",
+          "validFor": null,
+          "value": "Field.EmailMessage.HtmlBody.begin"
         },
         {
           "active": true,
@@ -2280,6 +2399,13 @@
           "defaultValue": false,
           "label": "Subject",
           "validFor": null,
+          "value": "Field.EmailMessage.Subject"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
           "value": "Field.Case.Subject"
         },
         {
@@ -2295,6 +2421,13 @@
           "label": "Subject",
           "validFor": null,
           "value": "Field.Problem.Subject.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.EmailMessage.Subject.begin"
         },
         {
           "active": true,
@@ -2344,6 +2477,13 @@
           "label": "Subject",
           "validFor": null,
           "value": "Field.ChangeRequest.Subject.end"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Subject",
+          "validFor": null,
+          "value": "Field.EmailMessage.Subject.end"
         },
         {
           "active": true,
@@ -2463,6 +2603,27 @@
           "label": "To",
           "validFor": null,
           "value": "Field.OutgoingEmail.ToAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "To Address",
+          "validFor": null,
+          "value": "Field.EmailMessage.ToAddress.begin"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "To Addresses",
+          "validFor": null,
+          "value": "Field.EmailMessage.ToAddress"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "To Addresses",
+          "validFor": null,
+          "value": "Field.EmailMessage.ToAddress.end"
         },
         {
           "active": true,
