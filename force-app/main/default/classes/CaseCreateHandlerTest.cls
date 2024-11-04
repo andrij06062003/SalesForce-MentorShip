@@ -3,11 +3,12 @@ public class CaseCreateHandlerTest {
     @testSetup
     static void setup() {
         Product2 testProduct = TestDataFactory.createTestProduct(true);
-        Case testCase = TestDataFactory.createTestCase(true);
+       
     }
 
     @isTest
     static void testCreateCaseWithVin() {
+        Case testCase = TestDataFactory.createTestCase(true);
         // Query for the inserted Car_Service__c records
         List<Car_Service__c> carServices = [SELECT Id, Case__c, Car_Relation__c FROM Car_Service__c WHERE Case__c IN (SELECT Id FROM Case WHERE Subject = 'VIN-PRS112233')];
 

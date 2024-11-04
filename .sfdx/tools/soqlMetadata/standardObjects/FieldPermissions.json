@@ -3123,6 +3123,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Case.CarVinCode__c"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "Case.ClosedDate"
         },
         {

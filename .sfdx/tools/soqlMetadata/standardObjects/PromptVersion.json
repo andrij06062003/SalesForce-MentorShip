@@ -3158,6 +3158,34 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "AiGroundingFileRef"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AiGroundingLibSrcRel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AiGroundingLibrary"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AiGroundingSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "AiImageDetectedObject"
         },
         {
@@ -3180,6 +3208,20 @@
           "label": null,
           "validFor": null,
           "value": "AiModelLanguage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AiRagFeatureDefinition"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AiRagFeaturePromptContent"
         },
         {
           "active": true,
@@ -16053,6 +16095,13 @@
           "label": null,
           "validFor": null,
           "value": "DataAssessmentValueMetric"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "DataAssetPromotionRequest"
         },
         {
           "active": true,

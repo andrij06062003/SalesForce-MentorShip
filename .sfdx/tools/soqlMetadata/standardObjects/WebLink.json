@@ -643,6 +643,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Fields_for_Comparer__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "FinanceBalanceSnapshot"
         },
         {

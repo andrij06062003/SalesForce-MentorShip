@@ -1004,7 +1004,7 @@
       "inlineHelpText": null,
       "label": "CarVinCode",
       "name": "CarVinCode__c",
-      "nillable": false,
+      "nillable": true,
       "picklistValues": [],
       "referenceTo": [],
       "relationshipName": null,

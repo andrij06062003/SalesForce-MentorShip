@@ -266,37 +266,44 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Start Work Item",
+          "label": "Discontinue Stage",
           "validFor": null,
-          "value": "StartWorkItem"
+          "value": "DiscontinueStage"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Start Step",
+          "label": "Discontinue Step",
           "validFor": null,
-          "value": "StartStep"
+          "value": "DiscontinueStep"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Start Run",
+          "label": "End Run",
           "validFor": null,
-          "value": "StartInstance"
+          "value": "EndInstance"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Start Stage",
+          "label": "End Stage",
           "validFor": null,
-          "value": "StartStage"
+          "value": "EndStage"
         },
         {
           "active": true,
           "defaultValue": false,
-          "label": "Fail Step",
+          "label": "End Step",
           "validFor": null,
-          "value": "FailStep"
+          "value": "EndStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "End Work Item",
+          "validFor": null,
+          "value": "EndWorkItem"
         },
         {
           "active": true,
@@ -315,16 +322,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Discontinue Step",
+          "label": "Fail Step",
           "validFor": null,
-          "value": "DiscontinueStep"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "Discontinue Stage",
-          "validFor": null,
-          "value": "DiscontinueStage"
+          "value": "FailStep"
         },
         {
           "active": true,
@@ -343,9 +343,30 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "Suspend Stage",
+          "label": "Start Run",
           "validFor": null,
-          "value": "SuspendStage"
+          "value": "StartInstance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Start Stage",
+          "validFor": null,
+          "value": "StartStage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Start Step",
+          "validFor": null,
+          "value": "StartStep"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Start Work Item",
+          "validFor": null,
+          "value": "StartWorkItem"
         },
         {
           "active": true,
@@ -357,30 +378,9 @@
         {
           "active": true,
           "defaultValue": false,
-          "label": "End Work Item",
+          "label": "Suspend Stage",
           "validFor": null,
-          "value": "EndWorkItem"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "End Step",
-          "validFor": null,
-          "value": "EndStep"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "End Run",
-          "validFor": null,
-          "value": "EndInstance"
-        },
-        {
-          "active": true,
-          "defaultValue": false,
-          "label": "End Stage",
-          "validFor": null,
-          "value": "EndStage"
+          "value": "SuspendStage"
         }
       ],
       "referenceTo": [],

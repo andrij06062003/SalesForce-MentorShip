@@ -1268,6 +1268,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "cdpSpotcheckSegment"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "cdpTriggerModelPredJob"
         },
         {

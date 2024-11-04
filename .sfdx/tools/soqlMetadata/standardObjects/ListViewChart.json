@@ -1857,6 +1857,13 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "Fields_for_Comparer__mdt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "FinanceBalanceSnapshot"
         },
         {
@@ -20604,6 +20611,62 @@
           "label": null,
           "validFor": null,
           "value": "ExpressionSetVersion.VersionNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.DeveloperName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.Label"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.Language"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.MasterLabel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.NamespacePrefix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.QualifiedApiName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.SystemModstamp"
         },
         {
           "active": true,
@@ -60333,6 +60396,62 @@
           "label": null,
           "validFor": null,
           "value": "ExpressionSetVersion.VersionNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.DeveloperName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.Id"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.Label"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.Language"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.MasterLabel"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.NamespacePrefix"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.QualifiedApiName"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Fields_for_Comparer__mdt.SystemModstamp"
         },
         {
           "active": true,

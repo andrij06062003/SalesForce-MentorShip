@@ -914,6 +914,20 @@
           "defaultValue": false,
           "label": null,
           "validFor": null,
+          "value": "AiGroundingFileRef"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "AiGroundingSource"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
           "value": "AiImageDetectedObject"
         },
         {
