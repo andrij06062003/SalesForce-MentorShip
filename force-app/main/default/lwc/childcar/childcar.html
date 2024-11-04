@@ -1,0 +1,36 @@
+<!--
+  @description       : 
+  @author            : Svyatoslav Andrushchak
+  @group             : 
+  @last modified on  : 10-30-2024
+  @last modified by  : Svyatoslav Andrushchak
+-->
+<template>
+    <div class="slds-col slds-p-around_small" style="width: 100%; max-width: 300px;"> 
+        <!-- Картка з відокремленням і контуром -->
+        <div class="slds-card" style="border: 1px solid #d8dde6; border-radius: 5px; margin-bottom: 10px;">
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="standard:product" size="small"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <h2 class="slds-text-heading_small slds-truncate"></h2>
+                    </div>
+                </header>
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-1">
+                        <template for:each={listToShow} for:item="itemToShow">
+                            <p key={itemToShow}>{itemToShow}</p>
+                        </template>
+                    </div>
+                </div>
+            </div>
+         <div class="slds-class_footer">
+            <lightning-button label="Remove" onclick={handleDelete}></lightning-button>
+         </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,412 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Voice Channel Interaction Event Id",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Source ID",
+      "name": "SourceId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User",
+        "VoiceCall"
+      ],
+      "relationshipName": "Source",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Source Type",
+      "name": "SourceType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Service Degradation",
+          "validFor": null,
+          "value": "ServiceDegradation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Call Disconnect Issue",
+          "validFor": null,
+          "value": "CallDisconnectAnomaly"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Agent Missed Call",
+          "validFor": null,
+          "value": "AgentMissedCall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Agent Generic Error",
+          "validFor": null,
+          "value": "AgentErrorGeneric"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Agent Status Sync Issue",
+          "validFor": null,
+          "value": "AgentStatusSync"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voice Call Generic Error",
+          "validFor": null,
+          "value": "VoiceCallErrorGeneric"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voice Call Routing Error",
+          "validFor": null,
+          "value": "VoiceRoutingError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voice Call Data Sync Error",
+          "validFor": null,
+          "value": "VoiceCallDataSyncError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Call Quality Degradation",
+          "validFor": null,
+          "value": "CallQualityDegradation"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voice Call Time-to-Assign",
+          "validFor": null,
+          "value": "VoiceCallTimeToAssign"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Vendor Login Failure Issue",
+          "validFor": null,
+          "value": "VendorLoginFailureError"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transcript Not Found",
+          "validFor": null,
+          "value": "TranscriptNotFound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voice Call Field Value Error",
+          "validFor": null,
+          "value": "VoiceCallFieldValueError"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Context ID",
+      "name": "ContextId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User",
+        "VoiceCall"
+      ],
+      "relationshipName": "Context",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Vendor Call Key",
+      "name": "VendorCallKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Event Timestamp",
+      "name": "EventTimeStamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Center ID",
+      "name": "ContactCenterId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "CallCenter"
+      ],
+      "relationshipName": "ContactCenter",
+      "sortable": true,
+      "type": "reference"
+    }
+  ],
+  "label": "Voice Channel Interaction Event",
+  "childRelationships": [
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceChnlInteractionEventShare",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceChnlIntrctnDtlEvent",
+      "deprecatedAndHidden": false,
+      "field": "VoiceChnlInteractionEventId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "VoiceChnlInteractionEvents",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "VoiceChnlInteractionEvent",
+  "queryable": true
+}
